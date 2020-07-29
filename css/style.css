@@ -54,6 +54,7 @@ img {
 /*Buttons*/
 .primaryButton {
   display: inline-block;
+  text-decoration: none;
   background-color: #FFAB2D;
   color: #FFFFFF;
   font-size: 20px;
@@ -67,6 +68,7 @@ img {
 
 .primaryButton:hover, .primaryButton:hover:focus {
   display: inline-block;
+  text-decoration: none;
   background-color: #FFFFFF;
   color: #FFAB2D;
   font-size: 20px;
@@ -80,11 +82,13 @@ img {
 }
 
 .contactButton {
+  display: inline-block;
   color: #353941;
   text-decoration: none;
 }
 
 .contactButton:visited {
+  display: inline-block;
   color: #CC6540;
   text-decoration: underline;
 }
