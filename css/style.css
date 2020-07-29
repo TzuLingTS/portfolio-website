@@ -1,0 +1,99 @@
+/*
+color used:
+Primary(orange):#FFAB2D
+Secondary(blue):#4AB8E1
+Text(black):#353941
+*/
+/*Default Elements*/
+header {
+  font-family: "Poppins", Helvetica;
+  font-size: 16px;
+  color: #353941;
+}
+
+body {
+  font-family: "Poppins", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  color: #353941;
+}
+
+footer {
+  font-size: 20px;
+  color: #353941;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 700;
+  color: #353941;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #353941;
+}
+
+h3 {
+  font-size: 1.17em;
+  font-weight: 700;
+  color: #353941;
+}
+
+h4 {
+  font-size: 1em;
+  font-weight: 700;
+  color: #353941;
+}
+
+img {
+  100%;
+}
+
+/*Buttons*/
+.primaryButton {
+  display: inline-block;
+  background-color: #FFAB2D;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  padding: 15px;
+  border-radius: 30px;
+  height: 20px;
+  width: 160px;
+}
+
+.primaryButton:hover, .primaryButton:hover:focus {
+  display: inline-block;
+  background-color: #FFFFFF;
+  color: #FFAB2D;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  padding: 15px;
+  border-radius: 30px;
+  height: 20px;
+  width: 160px;
+  border: solid 4px #FFAB2D;
+}
+
+.contactButton {
+  color: #353941;
+  text-decoration: none;
+}
+
+.contactButton:visited {
+  color: #CC6540;
+  text-decoration: underline;
+}
+
+.contactButton:hover, .contactButton:focus {
+  color: #FFAB2D;
+}
+
+.contactIcon {
+  height: 30px;
+  width: 30px;
+}
