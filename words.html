@@ -16,7 +16,7 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
   <!--Home Page Title-->
-  <title>Tzu-Ling Tseng | About</title>
+  <title>Tzu-Ling Tseng | WORDS</title>
   <link rel="stylesheet" type="text/css " href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" type="text/css " href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
@@ -25,9 +25,9 @@
 <body>
   <header>
     <!--Inner Container-->
-    <div>
+    <div class="container">
       <a href="index.html">
-        <img src="img/logo/logo.png" alt="Tzu-Ling's Logo">
+        <img src="img/logo/logo.png" alt="Tzu-Ling's Logo" class="logo">
       </a>
       <nav>
         <ul>
@@ -40,20 +40,20 @@
   </header>
   <main>
     <!--Section #1-->
-    <div>
+    <div class="section">
       <!--Container for content-->
-      <div>
+      <div class="container" id="hero">
         <!--Row div-->
-        <div>
+        <div class="row">
           <!--Column for hero image-->
-          <div>
+          <div class="column-left">
             <picture>
               <source srcset="img/words/words-hero-image@1.png" media="(max-width:767px)">
               <img src="img/words/words-hero-image@2.png" alt="Words Hero Image">
             </picture>
           </div>
           <!--Column for INTRODUCTION-->
-          <div>
+          <div class="column-right">
             <h1>WORDS <span>Vocabulary Learning APP</span></h1>
             <p>
               Language learning app can't just have an educational purpose but also a social purpose.
@@ -66,103 +66,104 @@
       </div>
     </div>
     <!--Section #2-->
-    <div>
+    <div class="section">
       <!--Container for OVERVIEW-->
-      <div>
+      <div class="container" id="overview">
         <h2>OVERVIEW</h2>
         <!--Row for div-->
-        <div>
+        <div class="row">
           <!--Column for OVERVIEW #1-->
-          <ul class="no-margin no-padding no-bullet">
-            <li>ROLE: UX Designer</li>
-            <li>OCCASION: School Project</li>
-            <li>DURATION: July-August 2019 (4 weeks)</li>
-            <li>METHOD: Design Thinking and Lean UX</li>
-          </ul>
+          <div class="column-left">
+            <ul class="no-margin no-padding no-bullet">
+              <li>ROLE: UX Designer</li>
+              <li>OCCASION: School Project</li>
+              <li>DURATION: July-August 2019 (4 weeks)</li>
+              <li>METHOD: Design Thinking and Lean UX</li>
+            </ul>
+          </div>
           <!--Column for OVERVIEW #2-->
-          <ul class="no-margin no-padding no-bullet">
-            <li>HOW MIGHT WE... Empower empower people to learn new vocabulary?</li>
-            <li>KEY FEATURES: Vocal Flashcard, Learning Buddy</li>
-          </ul>
+          <div class="column-right">
+            <ul class="no-margin no-padding no-bullet">
+              <li>HOW MIGHT WE... Empower empower people to learn new vocabulary?</li>
+              <li>KEY FEATURES: Vocal Flashcard, Learning Buddy</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
     <!--Section #3 (THINK)-->
-    <div>
+    <div class="section">
       <!--Container for THINK section-->
-      <div>
+      <div class="container" id="think">
         <!--Column for THINK H2-->
-        <div>
+        <div class="column">
           <h2>THINK</h2>
         </div>
         <!--Container for COMPETITIVE ANALYSIS-->
-        <div>
+        <div class="container" id="competitive-analysis">
           <!--Column for COMPETITIVE ANALYSIS Description-->
-          <div>
+          <div class="column">
             <h3>COMPETITIVE ANALYSIS</h3>
-            <p>Learning something new is a critical life skill no matter our
-              age, location, or circumstances, especially comes to language learning.
+            <p>
+              Learning something new is a critical life skill no matter our age, location, or circumstances, especially comes to language learning.
             </p>
-            <p>There are so many language learning apps in the marketplace now.
-              By doing the competitor analysis, I’m looking for a pattern that
-              makes the well-known products so successful, but most importantly,
-              spotting the area that may cause the users’ frictions that our product
-              can offer a better solution for the user and fit in the marketplace.</p>
+            <p>
+              There are so many language learning apps in the marketplace now. By doing the competitor analysis, I’m looking for a pattern that makes the well-known products so successful, but most importantly, spotting the area that may cause the
+              users’ frictions that our product can offer a better solution for the user and fit in the marketplace.
+            </p>
           </div>
           <hr>
           <!--Column for COMPETITIVE ANALYSIS Example-->
-          <div>
+          <div class="row">
             <!--Row for example #1-->
-            <div>
+            <div class="column-left">
               <picture>
                 <source srcset="img/words/competitive-analysis/tinycards@1.png" media="(max-width:767px)">
                 <img src="img/words/competitive-analysis/tinycards@1.png" alt="Tinycards">
               </picture>
               <h4>Tinycards</h4>
-              <p>It is pleasantly intuitive to use, although, in the beginning,
-                it is a bit confusing, once you get used to it, it can be easy
-                and enjoyable. I like the way they have so many languages and
-                so many different topics that can be chosen, but I think they
-                can do better for categorising different languages.</p>
+              <p>
+                It is pleasantly intuitive to use, although, in the beginning, it is a bit confusing, once you get used to it, it can be easy and enjoyable. I like the way they have so many languages and so many different topics that can be chosen,
+                but I think they can do better for categorising different languages.
+              </p>
             </div>
             <!--Row for example #2-->
-            <div>
+            <div class="column-middle">
               <picture>
                 <source srcset="img/words/competitive-analysis/quizlet@1.png" media="(max-width:767px)">
                 <img src="img/words/competitive-analysis/quizlet@2.png" alt="Quizlet">
               </picture>
               <h4>Quizlet</h4>
-              <p>I really like the concept which teachers can use it as a game
-                for teaching. And the offline setting can help the learner uses
-                it everywhere without any restriction. But I hope they can put
-                the menu on as it is a bit difficult for the user to explore
-                the different topics or categories.</p>
+              <p>
+                I really like the concept which teachers can use it as a game for teaching. And the offline setting can help the learner uses it everywhere without any restriction. But I hope they can put the menu on as it is a bit difficult for the
+                user to explore the different topics or categories.
+              </p>
             </div>
             <!--Row for example #3-->
-            <div>
+            <div class="column-right">
               <picture>
                 <source srcset="img/words/competitive-analysis/vocabulazy@1.png" media="(max-width:767px)">
                 <img src="img/words/competitive-analysis/vocabulazy@1.png" alt="VocabuLazy">
               </picture>
               <h4>VocabuLazy</h4>
-              <p>This app focuses on the students who are going to take the test,
-                it is easy for them to find the one they want to learn, but I
-                think they can provide more features to let the user explore
-                more for themselves. I think this app is still at an early stage
-                comparing to the other two.</p>
+              <p>
+                This app focuses on the students who are going to take the test, it is easy for them to find the one they want to learn, but I think they can provide more features to let the user explore more for themselves. I think this app is still
+                at an early stage comparing to the other two.
+              </p>
             </div>
           </div>
         </div>
         <!--Container for USER RESEARCH-->
-        <div>
+        <div class="container" id="user-research">
           <!--Column for USER RESEARCH Description-->
-          <div>
+          <div class="column">
             <h3>USER RESEARCH</h3>
-            <p>To effectively employ the principles of user-centred design,
-              I talk directly to my users at the very beginning of the project
-              to understand how design can meet their needs and requirements.
+            <p>
+              To effectively employ the principles of user-centred design, I talk directly to my users at the very beginning of the project to understand how design can meet their needs and requirements.
             </p>
-            <p>I conducted user research with 3 participants with the goals in mind:</P>
+            <p>
+              I conducted user research with 3 participants with the goals in mind:
+            </P>
             <ol>
               <li>Understanding their motivation of learning new languages.</li>
               <li>What factors might cause it harder to learn?</li>
@@ -171,60 +172,63 @@
           </div>
           <hr>
           <!--Column for USER RESEARCH Example-->
-          <div>
+          <div class="row">
             <!--Row for example #1-->
-            <div>
+            <div class="column-left">
               <picture>
                 <source srcset="img/words/user-research/user-research-01@1.png" media="(max-width:767px)">
                 <img src="img/words/user-research/user-research-01@2.png" alt="Carolyn Chung">
               </picture>
               <h4>Carolyn Chung<br>(23)Student<br>Studying English for her exam</h4>
-              <p>‘I don’t always have a thought to learn new vocabulary unless
-                I have to. It just doesn’t look fun for me.’</p>
+              <p>
+                ‘I don’t always have a thought to learn new vocabulary unless I have to. It just doesn’t look fun for me.’
+              </p>
             </div>
             <!--Row for example #2-->
-            <div>
+            <div class="column-middle">
               <picture>
                 <source srcset="img/words/user-research/user-research-02@1.png" media="(max-width:767px)">
                 <img src="img/words/user-research/user-research-02@2.png" alt="Mandy Liu">
               </picture>
               <h4>Mandy Liu<br>(25)Student<br>Wanting to learn Japanese</h4>
-              <p>‘Because it’s me who decide to learn Japanese, I always feel
-                positive and excited when I learn something new.’</p>
+              <p>
+                ‘Because it’s me who decide to learn Japanese, I always feel positive and excited when I learn something new.’
+              </p>
             </div>
             <!--Row for example #3-->
-            <div>
+            <div class="column-right">
               <picture>
                 <source srcset="img/words/user-research/user-research-03@1.png" media="(max-width:767px)">
                 <img src="img/words/user-research/user-research-03@1.png" alt="Emily Lin">
               </picture>
               <h4>Emily Lin<br>(24) Financial Administrator<br>Wanting to speak English fluently</h4>
-              <p>‘For me, language is all about communication, so if the one I
-                learn can have a connection with my everyday life, then it will
-                be perfect for me.’</p>
+              <p>
+                ‘For me, language is all about communication, so if the one I learn can have a connection with my everyday life, then it will be perfect for me.’
+              </p>
             </div>
           </div>
         </div>
       </div>
     </div>
     <!--Section #4 (MAKE)-->
-    <div>
+    <div class="section" id="make">
       <!--Container for MAKE Section-->
-      <div>
+      <div class="container">
         <!--Column for MAKE h2-->
-        <div>
+        <div class="column">
           <h2>MAKE</h2>
         </div>
         <!--Container for PROTO PERSONA-->
-        <div>
+        <div class="container" id="proto-persona">
           <!--Column for PROTOTYPE PERSONA Description-->
-          <div>
+          <div class="column">
             <h3>PROTO-PERSONA</h3>
-            <p>After talking to the user, I have a better understanding of the app
-              I’m going to create. I created a personas that based on my research,
-              extensive user and market research.
+            <p>
+              After talking to the user, I have a better understanding of the app I’m going to create. I created a personas that based on my research, extensive user and market research.
             </p>
-            <p>I also came out with some ideas about what WORDS should be focus on:</P>
+            <p>
+              I also came out with some ideas about what WORDS should be focus on:
+            </P>
             <ol>
               <li> 10-20 min per session.</li>
               <li>Focus on communication and speaking.</li>
@@ -233,7 +237,7 @@
           </div>
           <hr>
           <!--Column for PROTOTYPE PERSONA Example-->
-          <div>
+          <div class="column">
             <picture>
               <source srcset="img/words/proto-persona/protopersona@1.png" media="(max-width:767px)">
               <img src="img/words/proto-persona/protopersona@2.png" alt="Proto-Persona">
@@ -241,12 +245,13 @@
           </div>
         </div>
         <!--Container for USER FLOW-->
-        <div>
+        <div class="container" id="user-flow">
           <!--Column for USER FLOW Description-->
-          <div>
+          <div class="column">
             <h3>USER FLOW</h3>
-            <p>I defined 2 tasks for Dale, my personas, would have done while
-              using our product as a new user:</P>
+            <p>
+              I defined 2 tasks for Dale, my personas, would have done while using our product as a new user:
+            </P>
             <ol>
               <li>Sign up and Choose the topic/language he wants.</li>
               <li>Create new flashcard and record.</li>
@@ -254,24 +259,36 @@
           </div>
           <hr>
           <!--Column for USER FLOW Example-->
-          <div>
+          <div class="row">
             <!--Row for example #1-->
-            <div>
+            <div class="column-left">
               <h4>TASK 1: Sign up and Choose the topic/language he wants.</h4>
-              <p>USER GOAL: Sign up as the new user, and create their own personalise learning homepage.</p>
-              <p>Entry Point: Open the app</p>
-              <p>Success Criteria: Let the user log in to their own personalise homepage.</p>
+              <p>
+                USER GOAL: Sign up as the new user, and create their own personalise learning homepage.
+              </p>
+              <p>
+                Entry Point: Open the app
+              </p>
+              <p>
+                Success Criteria: Let the user log in to their own personalise homepage.
+              </p>
               <picture>
                 <source srcset="img/words/user-flow/user-flow-01@1.png" media="(max-width:767px)">
                 <img src="img/words/user-flow/user-flow-01@2.png" alt="User FLow 1">
               </picture>
             </div>
             <!--Row for example #2-->
-            <div>
+            <div class="column-right">
               <h4>TASK 2: Create new flashcard and record.</h4>
-              <p>USER GOAL: Allow users add the new vocabulary and definition or new record on their Flashcard Page.</p>
-              <p>Entry Point: Home Page</p>
-              <p>Success Criteria: Create the new folder to add the new words or add the new words in the existence folder.</p>
+              <p>
+                USER GOAL: Allow users add the new vocabulary and definition or new record on their Flashcard Page.
+              </p>
+              <p>
+                Entry Point: Home Page
+              </p>
+              <p>
+                Success Criteria: Create the new folder to add the new words or add the new words in the existence folder.
+              </p>
               <picture>
                 <source srcset="img/words/user-flow/user-flow-02@1.png" media="(max-width:767px)">
                 <img src="img/words/user-flow/user-flow-02@2.png" alt="User FLow 2">
@@ -280,25 +297,24 @@
           </div>
         </div>
         <!--Container for WIREFRAMING and PROTOTYPING-->
-        <div>
+        <div class="container" id="wireframe">
           <!--Column for WIREFRAMING and PROTOTYPING Description-->
-          <div>
+          <div class="column">
             <h3>WIREFRAMING and PROTOTYPING</h3>
-            <p>I started to build a more physical system around these flows based
-              on what I’d learned through the process. I quickly used pen and paper
-              to sketch my ideas as many as I could into the low- fidelity wireframes
-              then weeded it down to the more intuitive version to the user.
+            <p>
+              I started to build a more physical system around these flows based on what I’d learned through the process. I quickly used pen and paper to sketch my ideas as many as I could into the low- fidelity wireframes then weeded it down to the
+              more intuitive version to the user.
             </p>
-            <p>At this point, I made sure, although the wireframes weren’t airtight
-              but were good enough to take to the user, because my primary goal
-              is to learn directly from the user through the experiment then I can
-              refine it based on what I learn directly from them.</p>
+            <p>
+              At this point, I made sure, although the wireframes weren’t airtight but were good enough to take to the user, because my primary goal is to learn directly from the user through the experiment then I can refine it based on what I learn
+              directly from them.
+            </p>
           </div>
           <hr>
           <!--Column for WIREFRAMING and PROTOTYPING Example-->
-          <div>
+          <div class="row">
             <!--Row for example #1-->
-            <div>
+            <div class="column1">
               <h4>Brainstroming: Sketching(15-20 min)</h4>
               <picture>
                 <source srcset="img/words/wireframe/sketching/sketching-01@1.jpg" media="(max-width:767px)">
@@ -310,7 +326,7 @@
               </picture>
             </div>
             <!--Row for example #2-->
-            <div>
+            <div class="column2">
               <h4>Brainstroming: Integrate Vocabulary Content(15-30 min)</h4>
               <picture>
                 <source srcset="img/words/wireframe/sketching/sketching-03@1.jpg" media="(max-width:767px)">
@@ -326,7 +342,7 @@
               </picture>
             </div>
             <!--Row for example #3-->
-            <div>
+            <div class="column3">
               <h4>Sign Up and Onboarding</h4>
               <picture>
                 <source srcset="img/words/wireframe/signup/sign-up-and-onboarding@1.png" media="(max-width:767px)">
@@ -334,7 +350,7 @@
               </picture>
             </div>
             <!--Row for example #4-->
-            <div>
+            <div class="column4">
               <h4>Choose Language and Topic</h4>
               <picture>
                 <source srcset="img/words/wireframe/language-and-topic/language-and-topic@1.png" media="(max-width:767px)">
@@ -342,7 +358,7 @@
               </picture>
             </div>
             <!--Row for example #5-->
-            <div>
+            <div class="column5">
               <h4>Home Page and Lesson</h4>
               <picture>
                 <source srcset="img/words/wireframe/homepage-lesson/home-page-and-lesson@1.png" media="(max-width:767px)">
@@ -350,7 +366,7 @@
               </picture>
             </div>
             <!--Row for example #6-->
-            <div>
+            <div class="column6">
               <h4>Flashcard</h4>
               <picture>
                 <source srcset="img/words/wireframe/flashcard/flashcard@1.png" media="(max-width:767px)">
@@ -358,7 +374,7 @@
               </picture>
             </div>
             <!--Row for example #7-->
-            <div>
+            <div class="column7">
               <h4>Profile and Buddy Page</h4>
               <picture>
                 <source srcset="img/words/wireframe/profile-and-buddy/profile-and-buddy@1.png" media="(max-width:767px)">
@@ -370,25 +386,33 @@
       </div>
     </div>
     <!--Section #5 (CHECK)-->
-    <div>
+    <div class="section">
       <!--Container for CHECK Section-->
-      <div>
+      <div class="container" id="check">
         <!--Column for CHECK h2-->
-        <div>
+        <div class="column">
           <h2>CHECK</h2>
         </div>
         <!--Container for USABILITY TEST-->
-        <div>
+        <div class="container" id="usability-test">
           <!--Column for USABILITY TEST Description-->
-          <div>
+          <div class="column">
             <h3>USABILITY TEST</h3>
-            <p>SCOPE: Testing the early stage of WORDS prototype, focusing on the
-              navigation and functionality.
+            <p>
+              SCOPE: Testing the early stage of WORDS prototype, focusing on the navigation and functionality.
             </p>
-            <p>SESSION: 15-25 min</p>
-            <p>PARTICIPAN: 3(1Remote, 2In-Person)</p>
-            <p>EQUIPMENT: Participants’ own desktop or mobile device.</p>
-            <p>DIRECT TEST:</P>
+            <p>
+              SESSION: 15-25 min
+            </p>
+            <p>
+              PARTICIPAN: 3(1Remote, 2In-Person)
+            </p>
+            <p>
+              EQUIPMENT: Participants’ own desktop or mobile device.
+            </p>
+            <p>
+              DIRECT TEST:
+            </P>
             <ol>
               <li>Sign up as the new user.</li>
               <li>Find new topic to learn and go to the session.</li>
@@ -399,46 +423,49 @@
           </div>
           <hr>
           <!--Column for USABILITY TEST Example-->
-          <div>
+          <div class="row">
             <!--Row for Example #1-->
-            <div>
+            <div class="column-left">
               <picture>
                 <source srcset="img/words/usability-test/usability-test-01@1.png" media="(max-width:767px)">
                 <img src="img/words/usability-test/usability-test-01@2.png" alt="Peter Chen">
               </picture>
               <h4>Peter Chen<br>(25)Social Worker</h4>
-              <p>‘It’s easy to use, I think after you design the detail it can
-                be more pleasant to use it.’</p>
+              <p>
+                ‘It’s easy to use, I think after you design the detail it can be more pleasant to use it.’
+              </p>
             </div>
             <!--Row for Example #2-->
-            <div>
+            <div class="column-middle">
               <picture>
                 <source srcset="img/words/usability-test/usability-test-02@1.png" media="(max-width:767px)">
                 <img src="img/words/usability-test/usability-test-02@2.png" alt="Mandy Liu">
               </picture>
               <h4>Mandy Liu<br>(25)Student</h4>
-              <p>‘It’s easy to use and quite intuitive, but some features are not
-                so consistency, it made me a bit confuse at the first time.’</p>
+              <p>
+                ‘It’s easy to use and quite intuitive, but some features are not so consistency, it made me a bit confuse at the first time.’
+              </p>
             </div>
             <!--Row for Example #3-->
-            <div>
+            <div class="column-right">
               <picture>
                 <source srcset="img/words/usability-test/usability-test-03@1.png" media="(max-width:767px)">
                 <img src="img/words/usability-test/usability-test-03@2.png" alt="Tin Chung">
               </picture>
               <h4>Tin Chung, (22)Nurse</h4>
-              <p>‘I’m looking forward to using it because not only can I learn
-                language, but also meet some native speaker in here!’</p>
+              <p>
+                ‘I’m looking forward to using it because not only can I learn language, but also meet some native speaker in here!’
+              </p>
             </div>
           </div>
         </div>
         <!--Container for REFINED-->
-        <div>
+        <div class="container" id="refined">
           <!--Column for REFINED Description-->
-          <div>
+          <div class="column">
             <h3>REFINED</h3>
-            <p>I refined the wireframes based on what I learned from the test
-              participants. I then chose 3 primary issues that should be fixed ASAP :
+            <p>
+              I refined the wireframes based on what I learned from the test participants. I then chose 3 primary issues that should be fixed ASAP :
             </p>
             <ol>
               <li>When choosing the language, using the flag as a button is not effective and may confuse the user.</li>
@@ -448,9 +475,9 @@
           </div>
           <hr>
           <!--Column for REFINED Example-->
-          <div>
+          <div class="row">
             <!--Row for example #1-->
-            <div>
+            <div class="column1">
               <h4>#1: Choosing Language: Using text instead of the flag.</h4>
               <picture>
                 <source srcset="img/words/refined/refined-01@1.png" media="(max-width:767px)">
@@ -458,7 +485,7 @@
               </picture>
             </div>
             <!--Row for example #2-->
-            <div>
+            <div class="column2">
               <h4>#2: Allowing use search bar to look up the words.</h4>
               <picture>
                 <source srcset="img/words/refined/refined-02@1.png" media="(max-width:767px)">
@@ -466,7 +493,7 @@
               </picture>
             </div>
             <!--Row for example #3-->
-            <div>
+            <div class="column3">
               <h4>#3: Give more autonomous when choosing the buddy.(ie. Rematch the buddy)</h4>
               <picture>
                 <source srcset="img/words/refined/refined-03@1.png" media="(max-width:767px)">
@@ -474,7 +501,7 @@
               </picture>
             </div>
             <!--Column for Prototype CTA-->
-            <div>
+            <div class="button">
               <a href="https://prottapp.com/p/269b12#/" target="_blank">See prototype on Prottapp</a>
             </div>
           </div>
@@ -482,37 +509,35 @@
       </div>
     </div>
     <!--Section #6 (WRAP UP)-->
-    <div>
+    <div class="section">
       <!--Container for WRAP UP-->
-      <div>
+      <div class="container" id="wrap-up">
         <h3>WRAP UP</h3>
-        <p>It’s my first time using UX and design thinking methods to approach the
-          problem, it’s definitely a learning progress for me as I went through
-          the whole process.
+        <p>
+          It’s my first time using UX and design thinking methods to approach the problem, it’s definitely a learning progress for me as I went through the whole process.
         </p>
-        <p>I really enjoyed using pen and paper to sketch the wireframes, especially
-          refining them after talking to the user. Because at that point, I knew
-          that the product is getting better, and I would have more confidence that
-          the product will meet users’ needs.
+        <p>
+          I really enjoyed using pen and paper to sketch the wireframes, especially refining them after talking to the user. Because at that point, I knew that the product is getting better, and I would have more confidence that the product will meet
+          users’ needs.
         </p>
-        <p>I would say the most interesting thing I learned from this project is
-          that users won’t always know what they want, so I believe as a UX designer,
-          it is important to find out what users are trying to achieve in a particular
-          circumstance and knowing User's 'Jobs to Be Done'.</p>
+        <p>
+          I would say the most interesting thing I learned from this project is that users won’t always know what they want, so I believe as a UX designer, it is important to find out what users are trying to achieve in a particular circumstance and
+          knowing User's 'Jobs to Be Done'.
+        </p>
       </div>
     </div>
     <!--Section #7-->
-    <div>
+    <div class="section">
       <!--Container for section #7-->
-      <div>
+      <div class="container">
         <!--Row div-->
-        <div>
+        <div class="row">
           <!--Column for Last Project CTA-->
-          <div>
+          <div class="column-left">
             <a href="#" class="button">Last Project</a>
           </div>
           <!--Column for Next Project CTA-->
-          <div>
+          <div class="column-right">
             <a href="#" class="button">Next Project</a>
           </div>
         </div>
@@ -520,30 +545,34 @@
     </div>
   </main>
   <!--This is for my Contact Information.-->
-  <footer>
+  <footer id="contact">
     <!-- Inner Cotainer-->
-    <div>
-      <h2>Let's Get In Touch!</h2>
-      <h3>I'm ready for the new challenge!</h3>
-      <p>If you like my works and want to have some chat with me. Here's how you
-        can reach me.
-      </p>
-      <!--Column for email-->
-      <div>
-        <a href="mailto:camellove0221[at]gmail.com">
-          Email me!
-          <img src="img/social-media-icon/gmail.png" alt="Email Icon" class="icon">
-        </a>
-        <a href="LINKEDIN-URL" target="_blank">
-          Find me on LinkedIn!
-          <img src="img/social-media-icon/linkedin.png" alt="LinkedIn Icon" class="icon">
-        </a>
-        <a href="GITHUB-URL" target="_blank">
-          Find me on Github!
-          <img src="img/social-media-icon/github.png" alt="GitHub Icon" class="icon">
-        </a>
+    <div class="container">
+      <div class="row">
+        <div class="column-left">
+          <h2>Let's Get In Touch!</h2>
+          <h3>I'm ready for the new challenge!</h3>
+          <p>
+            If you like my works and want to have some chat with me. Here's how you can reach me.
+          </p>
+        </div>
+        <!--Column for email-->
+        <div class="column-right">
+          <a href="mailto:camellove0221[at]gmail.com">
+            Email me!
+            <img src="img/social-media-icon/gmail.png" alt="Email Icon" class="icon">
+          </a>
+          <a href="LINKEDIN-URL" target="_blank">
+            Find me on LinkedIn!
+            <img src="img/social-media-icon/linkedin.png" alt="LinkedIn Icon" class="icon">
+          </a>
+          <a href="GITHUB-URL" target="_blank">
+            Find me on Github!
+            <img src="img/social-media-icon/github.png" alt="GitHub Icon" class="icon">
+          </a>
+        </div>
+        <p>Copyright Tzu-Ling Tseng 2020</p>
       </div>
-      <p>Copyright Tzu-Ling Tseng 2020</p>
     </div>
   </footer>
 </body>
