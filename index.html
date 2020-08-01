@@ -27,7 +27,7 @@
     <!--Inner Container-->
     <div class="container">
       <a href="index.html">
-        <img src="img/logo/logo.png" alt="Tzu-Ling's Logo">
+        <img src="img/logo/logo.png" alt="Tzu-Ling's Logo" class="logo">
       </a>
       <nav>
         <ul>
@@ -56,16 +56,16 @@
       <div class="container">
         <h2>Projects</h2>
         <!--This is the row to hold 2 columns of the #1 project -->
-        <div>
+        <div class="row">
           <!-- This column is for #1 project's image-->
-          <div>
+          <div class="contianer-left">
             <picture>
               <source srcset="img/surrounder/surrounder@1.png" media="(max-width:767px)">
               <img src="img/surrounder/surrounder@2.png" alt="Surround·er Image">
             </picture>
           </div>
           <!--This Column is for #1 project description-->
-          <div>
+          <div class="container-right">
             <h3>Surround·er</h3>
             <p>Surround·er is a scavenger hunt game, that helps bring people
               together in new environments while showing them fun and interesting
@@ -76,16 +76,16 @@
         </div>
 
         <!--This is the row to hold 2 columns of the #2 project -->
-        <div>
+        <div class="row">
           <!-- This column is for #2 project's image-->
-          <div>
+          <div class="container-left">
             <picture>
               <source srcset="img/words/words@1.png" media="(max-width:767px)">
               <img src="img/words/words@2.png" alt="WORDS Image">
             </picture>
           </div>
           <!--This Column is for #2 project description-->
-          <div>
+          <div class="container-right">
             <h3>WORDS</h3>
             <p>WORDS is the vocabulary learning app that allows you to have your
               own mother tongue's buddy that making sure to help you gain more
@@ -102,27 +102,31 @@
   <footer id="contact">
     <!-- Inner Cotainer-->
     <div class="container">
-      <h2>Let's Get In Touch!</h2>
-      <h3>I'm ready for the new challenge!</h3>
-      <p>If you like my works and want to have some chat with me. Here's how you
-        can reach me.
-      </p>
-      <!--Column for email-->
-      <div>
-        <a href="mailto:camellove0221[at]gmail.com">
-          Email me!
-          <img src="img/social-media-icon/gmail.png" alt="Email Icon" class="icon">
-        </a>
-        <a href="LINKEDIN-URL" target="_blank">
-          Find me on LinkedIn!
-          <img src="img/social-media-icon/linkedin.png" alt="LinkedIn Icon" class="icon">
-        </a>
-        <a href="GITHUB-URL" target="_blank">
-          Find me on Github!
-          <img src="img/social-media-icon/github.png" alt="GitHub Icon" class="icon">
-        </a>
+      <div class="row">
+        <div class="column-left">
+          <h2>Let's Get In Touch!</h2>
+          <h3>I'm ready for the new challenge!</h3>
+          <p>
+            If you like my works and want to have some chat with me. Here's how you can reach me.
+          </p>
+        </div>
+        <!--Column for email-->
+        <div class="column-right">
+          <a href="mailto:camellove0221[at]gmail.com">
+            Email me!
+            <img src="img/social-media-icon/gmail.png" alt="Email Icon" class="icon">
+          </a>
+          <a href="LINKEDIN-URL" target="_blank">
+            Find me on LinkedIn!
+            <img src="img/social-media-icon/linkedin.png" alt="LinkedIn Icon" class="icon">
+          </a>
+          <a href="GITHUB-URL" target="_blank">
+            Find me on Github!
+            <img src="img/social-media-icon/github.png" alt="GitHub Icon" class="icon">
+          </a>
+        </div>
+        <p>Copyright Tzu-Ling Tseng 2020</p>
       </div>
-      <p>Copyright Tzu-Ling Tseng 2020</p>
     </div>
   </footer>
 </body>

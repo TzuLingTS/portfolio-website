@@ -25,9 +25,9 @@
 <body>
   <header>
     <!--Inner Container-->
-    <div>
+    <div class="contianer">
       <a href="index.html">
-        <img src="img/logo/logo.png" alt="Tzu-Ling's Logo">
+        <img src="img/logo/logo.png" alt="Tzu-Ling's Logo" class="logo">
       </a>
       <nav>
         <ul>
@@ -39,46 +39,48 @@
     </div>
   </header>
   <main>
-    <!--Container #1-->
-    <div>
-      <!--Column for Heading-->
-      <div>
-        <h1>About</h1>
-      </div>
-    </div>
-    <!--Container #2-->
-    <div>
-      <!--Column for Content-->
-      <div>
-        <picture>
+    <!--Container-->
+    <div class="container">
+      <!--Row-->
+      <div class="row">
+        <!--column to hold the left container-->
+        <div class="column-left>" <picture>
           <source srcset="img/me/me@1.png" media="(max-width:767px)">
           <img src="img/me/me@2.png" alt="My Picture">
-        </picture>
-        <!--Row for Content Columns-->
-        <div>
+          </picture>
+        </div>
+        <!--column to hold the right container-->
+        <div class="column-right">
           <!--My Story-->
-          <div>
-            <h2>I’m TzuLing Tseng, a certified UX/UI designer based in Taiwan.</h2>
-            <p>My Chinese Literature background helps me to become not only a more
+          <div class="my-story">
+            <h2>Tzu-Ling Tseng <span>UX/UI Designer</span></h2>
+            <p>
+              My Chinese Literature background helps me to become not only a more
               open-mind and objective person but also capable of spotting a problem,
               drilling through the details that encompass the issue, and developing
               a unique and viable solution logically.
             </p>
-            <p>Meanwhile, I am also a creative person and my personality makes me
+            <p>
+              Meanwhile, I am also a creative person and my personality makes me
               always put myself in others' shoes.
             </p>
-            <p>I am always eager to learn new things and constantly upgrade my
+            <p>
+              I am always eager to learn new things and constantly upgrade my
               digital product design skill to make myself a better designer and a
               better problem solver!
             </p>
             <!-- CTA for Resume-->
             <a href="#" target="_blank" class="button">See Resume</a>
           </div>
+
           <!--Skills and Tools-->
-          <div>
+          <div class="column">
             <h2>Skills and Tools</h2>
+          </div>
+          <!--Row-->
+          <div class="row">
             <!--Column for Design Tools-->
-            <div>
+            <div class="column-left" id="design-tool">
               <h3>Design Tools</h3>
               <ul>
                 <li>Sketch</li>
@@ -88,7 +90,7 @@
               </ul>
             </div>
             <!--Column for Developing Tool-->
-            <div>
+            <div class="column-right" id="developing-skill">
               <h3>Developing Tools</h3>
               <ul>
                 <li>HTML</li>
@@ -98,34 +100,41 @@
             </div>
           </div>
         </div>
+        <!--column right-->
       </div>
+      <!--row-->
     </div>
+    <!--Contianer-->
   </main>
   <!--This is for my Contact Information.-->
-  <footer>
+  <footer id="contact">
     <!-- Inner Cotainer-->
-    <div>
-      <h2>Let's Get In Touch!</h2>
-      <h3>I'm ready for the new challenge!</h3>
-      <p>If you like my works and want to have some chat with me. Here's how you
-        can reach me.
-      </p>
-      <!--Column for email-->
-      <div>
-        <a href="mailto:camellove0221[at]gmail.com">
-          Email me!
-          <img src="img/social-media-icon/gmail.png" alt="Email Icon" class="icon">
-        </a>
-        <a href="LINKEDIN-URL" target="_blank">
-          Find me on LinkedIn!
-          <img src="img/social-media-icon/linkedin.png" alt="LinkedIn Icon" class="icon">
-        </a>
-        <a href="GITHUB-URL" target="_blank">
-          Find me on Github!
-          <img src="img/social-media-icon/github.png" alt="GitHub Icon" class="icon">
-        </a>
+    <div class="container">
+      <div class="row">
+        <div class="column-left">
+          <h2>Let's Get In Touch!</h2>
+          <h3>I'm ready for the new challenge!</h3>
+          <p>
+            If you like my works and want to have some chat with me. Here's how you can reach me.
+          </p>
+        </div>
+        <!--Column for email-->
+        <div class="column-right">
+          <a href="mailto:camellove0221[at]gmail.com">
+            Email me!
+            <img src="img/social-media-icon/gmail.png" alt="Email Icon" class="icon">
+          </a>
+          <a href="LINKEDIN-URL" target="_blank">
+            Find me on LinkedIn!
+            <img src="img/social-media-icon/linkedin.png" alt="LinkedIn Icon" class="icon">
+          </a>
+          <a href="GITHUB-URL" target="_blank">
+            Find me on Github!
+            <img src="img/social-media-icon/github.png" alt="GitHub Icon" class="icon">
+          </a>
+        </div>
+        <p>Copyright Tzu-Ling Tseng 2020</p>
       </div>
-      <p>Copyright Tzu-Ling Tseng 2020</p>
     </div>
   </footer>
 </body>
