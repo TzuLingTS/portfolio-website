@@ -165,6 +165,15 @@ a:hover, a:focus, a:active {
   display: block;
 }
 
+.hightlight {
+  display: inline-block;
+  background-color: rgba(247, 219, 177, 50);
+}
+
+span {
+  display: inline-block;
+}
+
 #copyright {
   padding: 15px 0;
   border-top: solid 1px #5D6874;
@@ -172,11 +181,6 @@ a:hover, a:focus, a:active {
   color: #5D6874;
   font-size: 0.875em;
   text-align: center;
-}
-
-span {
-  display: inline-block;
-  background-color: rgba(247, 219, 177, 50);
 }
 
 @media (min-width:768px) {
