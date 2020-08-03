@@ -4,6 +4,7 @@ Primary(orange):#FFAB2D
 Secondary(blue):#4AB8E1
 Text(black):#353941
 */
+
 /*Default Elements*/
 * {
   box-sizing: border-box;
@@ -97,6 +98,10 @@ footer{
   padding: 10px 0px;
 }
 
+span {
+  display: inline-block;
+}
+
 /*Layout*/
 .container {
   width: 94%;
@@ -141,10 +146,7 @@ a:hover, a:focus, a:active {
   text-decoration: none;
 }
 
-.icon {
-  width: 30px;
-}
-
+/* Specific Class*/
 .no-margin {
   margin: 0;
 }
@@ -161,6 +163,10 @@ a:hover, a:focus, a:active {
   text-align: center;
 }
 
+.icon {
+  width: 30px;
+}
+
 .social{
   display: block;
 }
@@ -170,10 +176,7 @@ a:hover, a:focus, a:active {
   background-color: rgba(247, 219, 177, 50);
 }
 
-span {
-  display: inline-block;
-}
-
+/*Specific ID*/
 #copyright {
   padding: 15px 0;
   border-top: solid 1px #5D6874;
@@ -183,6 +186,7 @@ span {
   text-align: center;
 }
 
+/*Responsive Design*/
 @media (min-width:768px) {
   body {
     font-size: 18px;
