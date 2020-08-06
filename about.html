@@ -25,7 +25,7 @@
 <body>
   <header>
     <!--Inner Container-->
-    <div class="contianer">
+    <div class="container">
       <a href="index.html">
         <img src="img/logo/logo.png" alt="Tzu-Ling's Logo" class="logo">
       </a>
@@ -44,17 +44,18 @@
       <!--Row-->
       <div class="row">
         <!--column to hold the left container-->
-        <div class="column2>" <picture>
-          <source srcset="img/me/me@1.png" media="(max-width:767px)">
-          <img src="img/me/me@2.png" alt="My Picture">
+        <div class="column col-md-6">
+          <picture>
+            <source srcset="img/me/me@1.png" media="(max-width:767px)">
+            <img src="img/me/me@2.png" alt="My Picture" class="my-picture">
           </picture>
         </div>
         <!--column to hold the right container-->
-        <div class="column2">
+        <div class="column col-md-6">
           <!--My Story-->
           <div class="my-story">
-            <h1>Tzu-Ling Tseng</h1>
-            <h2>UX/UI Designer</h2>
+            <h1 class="text-align-center">Tzu-Ling Tseng</h1>
+            <h2 class="text-align-center">UX/UI Designer</h2>
             <p>
               My Chinese Literature background helps me to become not only a more
               <span class="hightlight">open-mind and objective</span> person but also capable of spotting a problem,
@@ -82,7 +83,7 @@
           <!--Row-->
           <div class="row">
             <!--Column for Design Tools-->
-            <div class="column2" id="design-tool">
+            <div class="column col-md-6" id="design-tool">
               <h3>Design Tools</h3>
               <ul>
                 <li>Sketch</li>
@@ -92,7 +93,7 @@
               </ul>
             </div>
             <!--Column for Developing Tool-->
-            <div class="column2" id="developing-skill">
+            <div class="column col-md-6" id="developing-skill">
               <h3>Developing Tools</h3>
               <ul>
                 <li>HTML</li>
@@ -114,14 +115,14 @@
     <div class="container">
       <h2 class="text-align-center">Contact</h2>
       <div class="row">
-        <div class="column2">
+        <div class="column col-md-6">
           <h3>Let's Get In Touch!</h3>
           <p>
             I'm ready for the new challenge! <br>If you like my works and want to have some chat with me. Here's how you can reach me.
           </p>
         </div>
         <!--Column for email-->
-        <div class="column2">
+        <div class="column col-md-6">
           <a href="mailto:camellove0221[at]gmail.com" class="social">
             <img src="img/social-media-icon/gmail.png" alt="Email Icon" class="icon">
             Email me!
@@ -135,8 +136,8 @@
             Find me on Github!
           </a>
         </div>
-        <p id="copyright">Copyright Tzu-Ling Tseng 2020</p>
       </div>
+      <p id="copyright">Copyright Tzu-Ling Tseng 2020</p>
     </div>
   </footer>
 </body>

@@ -4,7 +4,6 @@ Primary(orange):#FFAB2D
 Secondary(blue):#4AB8E1
 Text(black):#353941
 */
-
 /*Default Elements*/
 * {
   box-sizing: border-box;
@@ -16,6 +15,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #353941;
+  display: grid;
 }
 
 h1 {
@@ -93,7 +93,7 @@ main {
   padding-top: 150px;
 }
 
-footer{
+footer {
   background: #FAF0E2;
   padding: 10px 0px;
 }
@@ -117,19 +117,18 @@ span {
   display: inline-block;
   font-size: 0.875em;
   text-decoration: none;
-  background-color: #FFAB2D;
-  color: #FFFFFF !important;
+  background-color: #FFFFFF;
+  color: #FFAB2D !important;
   font-weight: 500;
   text-align: center;
-  padding: 12px 29px;
-  border-radius: 30px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: solid 4px #FFAB2D;
 }
 
 .button:hover, .button:focus {
-  background-color: #FFFFFF;
-  color: #FFAB2D !important;
-  padding: 8px 25px;
-  border: solid 4px #FFAB2D;
+  background-color: #FFAB2D;
+  color: #FFFFFF !important;
 }
 
 /*Hyperlinks*/
@@ -159,7 +158,7 @@ a:hover, a:focus, a:active {
   list-style-type: none;
 }
 
-.text-align-center{
+.text-align-center {
   text-align: center;
 }
 
@@ -167,13 +166,17 @@ a:hover, a:focus, a:active {
   width: 30px;
 }
 
-.social{
+.social {
   display: block;
 }
 
 .hightlight {
   display: inline-block;
   background-color: rgba(247, 219, 177, 50);
+}
+
+.small-img {
+  width: 50%;
 }
 
 /*Specific ID*/
@@ -186,9 +189,98 @@ a:hover, a:focus, a:active {
   text-align: center;
 }
 
+/*CSS Animation*/
+@keyframes color-change {
+  0%{fill:#edc655;}
+  50%{fill:#fcffad;}
+  100%{fill:#f76414;}
+}
+
+.sun{
+  animation: 4s color-change infinite alternate ease-in;
+}
+
+@keyframes cloud-move{
+  from{transform: translate(0,50px);}
+  to{transform: translate(200px, 50px);}
+}
+
+.cloud-front{
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse{
+  from{transform: translate(446px,48px);}
+  to{transform: translate(100px, 48px);}
+}
+
+.cloud-back{
+  animation: 25s cloud-move-reverse infinite alternate linear;
+}
+
 /*Responsive Design*/
-@media (min-width:768px) {
+@media only screen and (min-width:640px) {
+  header {
+    text-align: unset;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+  }
+
+  main {
+    padding-top: 80px;
+  }
+
   body {
     font-size: 18px;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .col-md-4 {
+    width: 33.3%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 0 10px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  #work h3 {
+    margin-top: 0;
+  }
+
+  #hero h1 {
+    text-align: center;
+  }
+
+  #hero h2 {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width:1024px) {
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .col-ld-7 {
+    width: 60%;
+  }
+
+  .col-ld-5 {
+    width: 40%;
   }
 }
