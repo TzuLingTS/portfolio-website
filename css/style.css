@@ -191,30 +191,48 @@ a:hover, a:focus, a:active {
 
 /*CSS Animation*/
 @keyframes color-change {
-  0%{fill:#edc655;}
-  50%{fill:#fcffad;}
-  100%{fill:#f76414;}
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
 }
 
-.sun{
+.sun {
   animation: 4s color-change infinite alternate ease-in;
 }
 
-@keyframes cloud-move{
-  from{transform: translate(0,50px);}
-  to{transform: translate(200px, 50px);}
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
 
-.cloud-front{
+.cloud-front {
   animation: 30s cloud-move infinite alternate linear;
 }
 
-@keyframes cloud-move-reverse{
-  from{transform: translate(446px,48px);}
-  to{transform: translate(100px, 48px);}
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
 
-.cloud-back{
+.cloud-back {
   animation: 25s cloud-move-reverse infinite alternate linear;
 }
 
