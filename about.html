@@ -22,7 +22,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body style="background-image:url(img/background-image/about-background.png); background-position:left;">
   <header>
     <!--Inner Container-->
     <div class="container">
@@ -44,18 +44,20 @@
       <!--Row-->
       <div class="row">
         <!--column to hold the left container-->
-        <div class="column col-md-6">
-          <picture>
+        <div class="column col-md-6 flex-column-center">
+          <picture class="my-picture">
             <source srcset="img/me/me@1.png" media="(max-width:767px)">
-            <img src="img/me/me@2.png" alt="My Picture" class="my-picture">
+            <img src="img/me/me@2.png" alt="My Picture">
           </picture>
+          <!-- CTA for Resume-->
+          <a href="#" target="_blank" class="button">See Resume</a>
         </div>
         <!--column to hold the right container-->
         <div class="column col-md-6">
           <!--My Story-->
           <div class="my-story">
             <h1 class="text-align-center">Tzu-Ling Tseng</h1>
-            <h2 class="text-align-center">UX/UI Designer</h2>
+              <h3 class="text-align-center">UX/UI DESIGNER</h3>
             <p>
               My Chinese Literature background helps me to become not only a more
               <span class="hightlight">open-mind and objective</span> person but also capable of spotting a problem,
@@ -71,35 +73,35 @@
               digital product design skill to make myself a better designer and a
               better problem solver!
             </p>
-            <!-- CTA for Resume-->
-            <a href="#" target="_blank" class="button">See Resume</a>
-            <hr>
+            <hr class="hr-about">
           </div>
 
           <!--Skills and Tools-->
-          <div class="column">
-            <h2 class="text-align-center">Skills and Tools</h2>
-          </div>
-          <!--Row-->
-          <div class="row">
-            <!--Column for Design Tools-->
-            <div class="column col-md-6" id="design-tool">
-              <h3>Design Tools</h3>
-              <ul>
-                <li>Sketch</li>
-                <li>Illustrotor</li>
-                <li>Photoshop</li>
-                <li>After Effects</li>
-              </ul>
+          <div class="section skills">
+            <div class="column">
+              <h2 class="text-align-center">Skills</h2>
             </div>
-            <!--Column for Developing Tool-->
-            <div class="column col-md-6" id="developing-skill">
-              <h3>Developing Tools</h3>
-              <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-              </ul>
+            <!--Row-->
+            <div class="row">
+              <!--Column for Design Tools-->
+              <div class="column col-md-6" id="design-tool">
+                <h3 class="decoration design-tools">Design Tools</h3>
+                <ul>
+                  <li>Sketch</li>
+                  <li>Illustrotor</li>
+                  <li>Photoshop</li>
+                  <li>After Effects</li>
+                </ul>
+              </div>
+              <!--Column for Developing Tool-->
+              <div class="column col-md-6" id="developing-skill">
+                <h3 class="decoration developing-tools">Developing Tools</h3>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -114,24 +116,24 @@
     <!-- Inner Cotainer-->
     <div class="container">
       <h2 class="text-align-center">Contact</h2>
-      <div class="row">
-        <div class="column col-md-6">
+      <div class="row flex-row-align-center">
+        <div class="column col-md-6 col-ld-7">
           <h3>Let's Get In Touch!</h3>
           <p>
             I'm ready for the new challenge! <br>If you like my works and want to have some chat with me. Here's how you can reach me.
           </p>
         </div>
         <!--Column for email-->
-        <div class="column col-md-6">
-          <a href="mailto:camellove0221[at]gmail.com" class="social">
+        <div class="column col-md-6 col-ld-5">
+          <a href="mailto:camellove0221[at]gmail.com" class="social flex-row-align-center">
             <img src="img/social-media-icon/gmail.png" alt="Email Icon" class="icon">
             Email me!
           </a>
-          <a href="LINKEDIN-URL" target="_blank" class="social">
+          <a href="LINKEDIN-URL" target="_blank" class="social flex-row-align-center">
             <img src="img/social-media-icon/linkedin.png" alt="LinkedIn Icon" class="icon">
             Find me on LinkedIn!
           </a>
-          <a href="GITHUB-URL" target="_blank" class="social">
+          <a href="GITHUB-URL" target="_blank" class="social flex-row-align-center">
             <img src="img/social-media-icon/github.png" alt="GitHub Icon" class="icon">
             Find me on Github!
           </a>
