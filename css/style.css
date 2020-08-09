@@ -135,8 +135,8 @@ span {
   margin-bottom: 100px;
 }
 
-.margin-30{
-  margin:30px 30px;
+.margin-30 {
+  margin: 30px 30px;
 }
 
 .decoration {
@@ -189,7 +189,7 @@ a:hover, a:focus, a:active {
   padding: 0;
 }
 
-.no-margin{
+.no-margin {
   margin: 0;
 }
 
@@ -221,12 +221,12 @@ a:hover, a:focus, a:active {
   max-width: 100px;
 }
 
-.medium-img img{
+.medium-img img {
   width: 100%;
   max-width: 450px;
 }
 
-.shadow{
+.shadow {
   box-shadow: 5px 5px 20px 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -243,7 +243,7 @@ a:hover, a:focus, a:active {
   width: 80%;
 }
 
-hr{
+hr {
   border: 0;
 }
 
@@ -251,15 +251,15 @@ hr{
   border-bottom: 5px dashed #96CFFA;
 }
 
-.hr-think{
+.hr-think {
   border-bottom: 5px dashed #3FA8F8;
 }
 
-.hr-make{
+.hr-make {
   border-bottom: 5px dashed #FACA4E;
 }
 
-.hr-check{
+.hr-check {
   border-bottom: 5px dashed #FA794E;
 }
 
@@ -290,34 +290,34 @@ hr{
   color: #FFFFFF;
 }
 
-.margin-space{
+.margin-space {
   margin: 10px 0;
 }
 
-.overview-layout{
+.overview-layout {
   margin: 0 30px;
 }
 
-.align-right{
+.align-right {
   text-align: right;
 }
 
-.lean-ux{
+.lean-ux {
   margin: 30px 0;
   padding: 10px 10px;
   border-radius: 5px;
   color: #FFFFFF;
 }
 
-.think{
+.think {
   background-color: #3FA8F8;
 }
 
-.make{
+.make {
   background-color: #FACA4E;
 }
 
-.check{
+.check {
   background-color: #FA794E;
 }
 
@@ -447,11 +447,11 @@ hr{
     text-align: center;
   }
 
-.flex-column-align-end{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
+  .flex-column-align-end {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
 
   .flex-end {
     display: flex;
