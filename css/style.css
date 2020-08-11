@@ -59,7 +59,6 @@ header {
   background-color: #FFFFFF;
   width: 100%;
   padding: 10px 25px;
-  text-align: center;
   position: fixed;
   box-shadow: 0px 0px 5px 0px rgba(147, 147, 147, 0.75);
   z-index: 99999;
@@ -87,12 +86,11 @@ nav>ul>li {
 }
 
 nav>ul>li>a {
-  padding: 0 15px;
+  padding: 0 12px;
   font-weight: 500;
-  font-size: 0.6em;
+  font-size: 1em;
   color: #353941 !important;
   text-decoration: none;
-  z-index: 1;
 }
 
 nav>ul>li>a:visited {
@@ -108,14 +106,20 @@ nav>ul>li>a:hover, nav>ul>li>a:focus {
   margin: 0;
 }
 
+.line-height-0{
+  line-height: 0;
+}
+
 main {
-  padding-top: 150px;
+  padding-top: 106px;
 }
 
 footer {
   background-image: url(../img/background-image/footer-background.png);
   background-position: top;
-  padding: 60px 0px;
+  padding: 100px 0px 5px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 span {
@@ -144,8 +148,28 @@ span {
   margin-right: 30px;
 }
 
+footer p{
+  width:91%;
+}
+
+footer h3{
+  width: 91%;
+}
+
+#hero p{
+  width:91%;
+}
+
+#work p{
+  width: 91%;
+}
+#work h3{
+  width: 91%;
+  line-height: 1.6;
+}
+
 .decoration {
-  width: 30%;
+  width: 100%;
   text-align: center;
   padding: 5px 5px;
   border-radius: 5px;
@@ -206,6 +230,10 @@ a:hover, a:focus, a:active {
   text-align: center;
 }
 
+.align-left{
+  text-align: left;
+}
+
 .icon {
   width: 30px;
   margin: 0 10px;
@@ -217,7 +245,7 @@ a:hover, a:focus, a:active {
 }
 
 .hightlight {
-  display: inline-block;
+  display: inline;
   background-color: rgba(247, 219, 177, 50);
 }
 
@@ -244,8 +272,11 @@ a:hover, a:focus, a:active {
 }
 
 .my-picture {
-  margin-bottom: 30px;
   width: 80%;
+}
+
+.my-story{
+  padding: 30px 0;
 }
 
 hr {
@@ -303,10 +334,6 @@ hr {
   margin: 0 30px;
 }
 
-.align-right {
-  text-align: right;
-}
-
 .line-height-15 {
   line-height: 1.5em;
 }
@@ -338,6 +365,7 @@ hr {
   color: #5D6874;
   font-size: 0.875em;
   text-align: center;
+  margin-bottom: 0;
 }
 
 #wrap-up {
@@ -413,6 +441,11 @@ hr {
     margin: 0;
   }
 
+  nav>ul>li>a {
+    padding: 0 15px;
+    font-size: 0.6em;
+  }
+
   main {
     padding-top: 80px;
   }
@@ -473,8 +506,40 @@ hr {
     text-align: left;
   }
 
+  .align-right {
+    text-align: right;
+  }
+
+  footer p{
+    width: 100%;
+  }
+
+  footer h3{
+    width: 100%;
+  }
+
+  #work .decoration {
+    width:50%;
+  }
+
   #work h3 {
     margin-top: 0;
+  }
+
+  #hero p{
+    width:100%;
+  }
+
+  #work p{
+    width: 100%;
+  }
+
+  #work h3{
+    width: 100%;
+  }
+
+  #cv .button{
+    width: 100%;
   }
 
   @media only screen and (min-width:1024px) {
