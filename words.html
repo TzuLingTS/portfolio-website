@@ -26,16 +26,23 @@
   <header>
     <!--Inner Container-->
     <div class="container">
-      <a href="index.html" class="line-height-0">
-        <img src="img/logo/logo.png" alt="Tzu-Ling's Logo" class="logo">
-      </a>
-      <nav>
-        <ul>
-          <li><a href="index.html">Project</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="navtoggle" id="myNavtoggle">
+        <a href="index.html" class="line-height-0">
+          <img src="img/logo/logo.png" alt="Tzu-Ling's Logo" class="logo">
+        </a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Project</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li>
+              <a href="javascript:void(0);" class="navicon line-height-0" onclick="menuToggle()">
+                <img src="img/nav-icon/bars.png" alt="navigation icon" class="icon">
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
   <main>
