@@ -26,13 +26,20 @@ $(document).ready(function() {
   });
 });
 
+//Progress Indicator
+window.addEventListener("scroll", myFunction);
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("progressBar").style.width = scrolled + "%";
+}
+
 //Scroll back to top Buttons
 mybutton = document.getElementById("topButton");
-window.onscroll = function() {
-  scrollFunction()
-};
+window.addEventListener("scroll", scrollFunction);
 function scrollFunction() {
-  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";
