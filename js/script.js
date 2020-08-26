@@ -28,6 +28,7 @@ $(document).ready(function() {
 
 //Progress Indicator
 window.addEventListener("scroll", myFunction);
+
 function myFunction() {
   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
   var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -38,6 +39,7 @@ function myFunction() {
 //Scroll back to top Buttons
 mybutton = document.getElementById("topButton");
 window.addEventListener("scroll", scrollFunction);
+
 function scrollFunction() {
   if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
     mybutton.style.display = "block";
@@ -45,6 +47,7 @@ function scrollFunction() {
     mybutton.style.display = "none";
   }
 }
+
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
