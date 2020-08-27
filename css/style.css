@@ -68,6 +68,7 @@ header {
 
 nav {
   display: inline-block;
+  width: 100%;
 }
 
 nav>ul {
@@ -97,7 +98,7 @@ nav>ul>li>a:hover, nav>ul>li>a:focus {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 10px
+  padding: 10px 0;
 }
 
 .navtoggle li:not(:last-child) {
@@ -114,14 +115,18 @@ nav>ul>li>a:hover, nav>ul>li>a:focus {
 }
 
 .navtoggle .icon {
+  position: absolute;
+  top: 20px;
+  right: 16px;
   margin: 0;
 }
 
 .navtoggle.responsive {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   text-align: center;
+  padding-bottom: 0;
 }
 
 .navtoggle.responsive li {
@@ -130,16 +135,10 @@ nav>ul>li>a:hover, nav>ul>li>a:focus {
 
 .navtoggle.responsive li:not(:last-child) {
   padding: 10px 0 5px;
-  border-bottom: 2px solid rgba(247, 219, 177, 50);
 }
 
 .navtoggle.responsive li:first-child {
   padding-top: 0;
-}
-
-.navtoggle.responsive .logo {
-  padding-top: 10px;
-  max-width: 50px;
 }
 
 .navtoggle.responsive li:last-child {
@@ -147,7 +146,7 @@ nav>ul>li>a:hover, nav>ul>li>a:focus {
 }
 
 .logo {
-  max-width: 33px;
+  width: 33px;
   margin: 0;
 }
 
@@ -534,7 +533,6 @@ hr {
 
   nav {
     width: auto;
-    /*float: right;*/
   }
 
   nav>ul {
