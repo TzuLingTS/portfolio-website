@@ -470,6 +470,169 @@ hr {
 }
 
 /* CSS Animation */
+@keyframes head-movement {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: 45% 60%;
+  }
+
+  40% {
+    transform: rotate(-15deg);
+    transform-origin: 45% 60%;
+  }
+
+  60% {
+    transform: rotate(-15deg);
+    transform-origin: 45% 60%;
+  }
+
+  100% {
+    transform: rotate(0deg);
+    transform-origin: 45% 60%;
+  }
+}
+
+#head {
+  animation: 5s head-movement 1 alternate linear;
+}
+
+@keyframes upper-body-movement {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: 45% 60%;
+  }
+
+  40% {
+    transform: rotate(-15deg);
+    transform-origin: 45% 60%;
+  }
+
+  60% {
+    transform: rotate(-15deg);
+    transform-origin: 45% 60%;
+  }
+
+  100% {
+    transform: rotate(0deg);
+    transform-origin: 45% 60%;
+  }
+}
+
+#upper-body {
+  animation: 5s upper-body-movement 1 alternate linear;
+}
+
+@keyframes right-leg-movement {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: 45% 65%;
+  }
+
+  40% {
+    transform: rotate(5deg);
+    transform-origin: 45% 65%;
+  }
+
+  60% {
+    transform: rotate(5deg);
+    transform-origin: 45% 65%;
+  }
+
+  100% {
+    transform: rotate(0deg);
+    transform-origin: 45% 65%;
+  }
+}
+
+#right-leg {
+  animation: 5s right-leg-movement 1 alternate linear;
+}
+
+@keyframes large-leave-movement {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: 83% 80%;
+  }
+
+  50% {
+    transform: rotate(-10deg);
+    transform-origin: 83% 80%;
+  }
+
+  100% {
+    transform: rotate(0deg);
+    transform-origin: 83% 80%;
+  }
+}
+
+#large-leave {
+  animation: 15s large-leave-movement infinite alternate linear;
+}
+
+@keyframes small-leave-movement {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: 83% 80%;
+  }
+
+  50% {
+    transform: rotate(15deg);
+    transform-origin: 83% 80%;
+  }
+
+  100% {
+    transform: rotate(0deg);
+    transform-origin: 83% 80%;
+  }
+}
+
+#small-leave {
+  animation: 15s small-leave-movement infinite alternate linear;
+}
+
+@keyframes small-pen-movement {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: 20% 70%;
+  }
+
+  50% {
+    transform: rotate(-10deg);
+    transform-origin: 20% 70%;
+  }
+
+  100% {
+    transform: rotate(0deg);
+    transform-origin: 20% 70%;
+  }
+}
+
+#small-pen {
+  animation: 15s small-pen-movement infinite alternate linear;
+}
+
+@keyframes large-pen-movement {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: 25% 65%;
+  }
+
+  50% {
+    transform: rotate(8deg);
+    transform-origin: 25% 65%;
+  }
+
+  100% {
+    transform: rotate(0deg);
+    transform-origin: 25% 65%;
+  }
+}
+
+#large-pen {
+  animation: 15s large-pen-movement infinite alternate linear;
+}
+
+/*Project #3 animation*/
 @keyframes color-change {
   0% {
     fill: #edc655;
