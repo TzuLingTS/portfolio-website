@@ -469,83 +469,53 @@ hr {
   background-color: #FAF0E2;
 }
 
-/* CSS Animation */
+/* Hero Image CSS Animation */
 @keyframes head-movement {
-  0% {
+  from {
     transform: rotate(0deg);
     transform-origin: 45% 60%;
   }
 
-  40% {
+  to {
     transform: rotate(-15deg);
-    transform-origin: 45% 60%;
-  }
-
-  60% {
-    transform: rotate(-15deg);
-    transform-origin: 45% 60%;
-  }
-
-  100% {
-    transform: rotate(0deg);
     transform-origin: 45% 60%;
   }
 }
 
 #head {
-  animation: 5s head-movement 1 alternate linear;
+  animation: 2.5s head-movement 1 alternate forwards ease-out;
 }
 
 @keyframes upper-body-movement {
-  0% {
+  from {
     transform: rotate(0deg);
     transform-origin: 45% 60%;
   }
 
-  40% {
+  to {
     transform: rotate(-15deg);
-    transform-origin: 45% 60%;
-  }
-
-  60% {
-    transform: rotate(-15deg);
-    transform-origin: 45% 60%;
-  }
-
-  100% {
-    transform: rotate(0deg);
     transform-origin: 45% 60%;
   }
 }
 
 #upper-body {
-  animation: 5s upper-body-movement 1 alternate linear;
+  animation: 2.5s upper-body-movement 1 alternate forwards ease-out;
 }
 
 @keyframes right-leg-movement {
-  0% {
+  from {
     transform: rotate(0deg);
     transform-origin: 45% 65%;
   }
 
-  40% {
+  to {
     transform: rotate(5deg);
-    transform-origin: 45% 65%;
-  }
-
-  60% {
-    transform: rotate(5deg);
-    transform-origin: 45% 65%;
-  }
-
-  100% {
-    transform: rotate(0deg);
     transform-origin: 45% 65%;
   }
 }
 
 #right-leg {
-  animation: 5s right-leg-movement 1 alternate linear;
+  animation: 2.5s right-leg-movement 1 alternate forwards ease-out;
 }
 
 @keyframes large-leave-movement {
@@ -555,7 +525,7 @@ hr {
   }
 
   50% {
-    transform: rotate(-10deg);
+    transform: rotate(-8deg);
     transform-origin: 83% 80%;
   }
 
@@ -576,7 +546,7 @@ hr {
   }
 
   50% {
-    transform: rotate(15deg);
+    transform: rotate(10deg);
     transform-origin: 83% 80%;
   }
 
@@ -630,6 +600,30 @@ hr {
 
 #large-pen {
   animation: 15s large-pen-movement infinite alternate linear;
+}
+
+@keyframes light-bulb-movement {
+  0% {
+    transform: translate(0, 30px);
+    transform-origin: 61% 37%;
+    opacity: 80%;
+  }
+
+  50% {
+    transform: translate(0, 10px);
+    transform-origin: 61% 37%;
+    opacity: 100%;
+  }
+
+  100% {
+    transform: translate(0, 30px);
+    transform-origin: 61% 37%;
+    opacity: 80%;
+  }
+}
+
+#light-bulb {
+  animation: 7s light-bulb-movement infinite alternate linear;
 }
 
 /*Project #3 animation*/
