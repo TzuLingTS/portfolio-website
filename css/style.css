@@ -470,52 +470,49 @@ hr {
 }
 
 /* Hero Image CSS Animation */
-@keyframes head-movement {
-  from {
+@keyframes upper-body-movement {
+  0% {
     transform: rotate(0deg);
     transform-origin: 45% 60%;
   }
 
-  to {
+  7%, 60% {
     transform: rotate(-15deg);
+    transform-origin: 45% 60%;
+  }
+
+  67%, 100% {
+    transform: rotate(0deg);
     transform-origin: 45% 60%;
   }
 }
 
 #head {
-  animation: 2.5s head-movement 1 alternate forwards ease-out;
+  animation: 20s 1s upper-body-movement infinite normal forwards ease-out;
 }
-
-@keyframes upper-body-movement {
-  from {
-    transform: rotate(0deg);
-    transform-origin: 45% 60%;
-  }
-
-  to {
-    transform: rotate(-15deg);
-    transform-origin: 45% 60%;
-  }
-}
-
 #upper-body {
-  animation: 2.5s upper-body-movement 1 alternate forwards ease-out;
+  animation: 20s 1s upper-body-movement infinite normal forwards ease-out;
 }
 
 @keyframes right-leg-movement {
-  from {
+  0% {
     transform: rotate(0deg);
     transform-origin: 45% 65%;
   }
 
-  to {
+  7%, 60% {
     transform: rotate(5deg);
+    transform-origin: 45% 65%;
+  }
+
+  70%, 100% {
+    transform: rotate(0deg);
     transform-origin: 45% 65%;
   }
 }
 
 #right-leg {
-  animation: 2.5s right-leg-movement 1 alternate forwards ease-out;
+  animation: 20s 1s right-leg-movement infinite normal forwards ease-out;
 }
 
 @keyframes large-leave-movement {
@@ -603,27 +600,24 @@ hr {
 }
 
 @keyframes light-bulb-movement {
-  0% {
-    transform: translate(0, 30px);
+  0%{
+    transform: translate(0, 40px);
     transform-origin: 61% 37%;
-    opacity: 80%;
   }
 
-  50% {
-    transform: translate(0, 10px);
+  20%, 60%, 100% {
+    transform: translate(0, 5px);
     transform-origin: 61% 37%;
-    opacity: 100%;
   }
 
-  100% {
+  40%, 80% {
     transform: translate(0, 30px);
     transform-origin: 61% 37%;
-    opacity: 80%;
   }
 }
 
 #light-bulb {
-  animation: 7s light-bulb-movement infinite alternate linear;
+  animation: 12s light-bulb-movement infinite alternate linear;
 }
 
 /*Project #3 animation*/
