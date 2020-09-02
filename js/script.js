@@ -26,7 +26,7 @@ $(document).ready(function() {
   });
 });
 
-//Progress Indicator
+// Progress Indicator
 window.addEventListener("scroll", myFunction);
 
 function myFunction() {
@@ -36,7 +36,7 @@ function myFunction() {
   document.getElementById("progressBar").style.width = scrolled + "%";
 }
 
-//Scroll back to top Buttons
+// Scroll back to top Buttons
 mybutton = document.getElementById("topButton");
 window.addEventListener("scroll", scrollFunction);
 

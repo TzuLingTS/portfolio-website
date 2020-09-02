@@ -4,7 +4,7 @@ Primary(orange):#FFAB2D
 Secondary(blue):#4AB8E1
 Text(black):#323232
 */
-/*Default Elements*/
+/* Default Elements */
 * {
   box-sizing: border-box;
 }
@@ -59,10 +59,10 @@ img {
 }
 
 header {
-  background-color: #FFFFFF;
+  background-color: #fff;
   width: 100%;
   position: fixed;
-  box-shadow: 0px 0px 5px 0px rgba(147, 147, 147, 0.75);
+  box-shadow: 0 0 5px 0 rgba(147, 147, 147, 0.75);
   z-index: 999;
 }
 
@@ -89,8 +89,9 @@ nav>ul>li>a:visited {
   color: #353941;
 }
 
-nav>ul>li>a:hover, nav>ul>li>a:focus {
-  color: #FFAB2D !important;
+nav>ul>li>a:hover,
+nav>ul>li>a:focus {
+  color: #ffab2d !important;
 }
 
 .navtoggle {
@@ -161,7 +162,7 @@ main {
 footer {
   background-image: url(../img/background-image/footer-background.png);
   background-position: top;
-  padding: 100px 0px 5px 0;
+  padding: 100px 0 5px;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -170,7 +171,7 @@ span {
   display: inline-block;
 }
 
-/*Layout*/
+/* Layout */
 .container {
   width: 94%;
   margin: 0 auto;
@@ -204,33 +205,33 @@ footer h3 {
 .decoration {
   width: 100%;
   text-align: center;
-  padding: 5px 5px;
+  padding: 5px;
   border-radius: 5px;
   margin: 10px 0;
 }
 
-/*Buttons*/
+/* Buttons */
 .button {
   display: inline-block;
   width: 50%;
-  /*max-width: 140px;*/
   font-size: 0.875em;
   text-decoration: none;
-  background-color: #FFFFFF;
-  color: #FFAB2D !important;
+  background-color: #fff;
+  color: #ffab2d !important;
   font-weight: 500;
   text-align: center;
   padding: 8px 16px;
-  border: solid 4px #FFAB2D;
+  border: solid 4px #ffab2d;
   border-radius: 5px;
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
   transition: background-color 0.5s;
   transition-timing-function: ease-out;
 }
 
-.button:hover, .button:focus {
-  background-color: #FFAB2D;
-  color: #FFFFFF !important;
+.button:hover,
+.button:focus {
+  background-color: #ffab2d;
+  color: #fff !important;
 }
 
 .project-nav {
@@ -252,8 +253,8 @@ footer h3 {
   bottom: 20px;
   right: 10px;
   z-index: 99;
-  background-image: linear-gradient(60deg, #96DEDA, #50C9C3);
-  color: #FFFFFF;
+  background-image: linear-gradient(60deg, #96deda, #50c9c3);
+  color: #fff;
   cursor: pointer;
   border: none;
   border-radius: 5px;
@@ -261,24 +262,26 @@ footer h3 {
 }
 
 #topButton:hover {
-  background-image: linear-gradient(135deg, #29323C, #485563);
+  background-image: linear-gradient(135deg, #29323c, #485563);
 }
 
-/*Hyperlinks*/
+/* Hyperlinks */
 a {
-  color: #CC6540;
+  color: #cc6540;
   text-decoration: none;
 }
 
 a:visited {
-  color: #CC6540;
+  color: #cc6540;
 }
 
-a:hover, a:focus, a:active {
-  color: #FFAB2D;
+a:hover,
+a:focus,
+a:active {
+  color: #ffab2d;
 }
 
-/* Specific Class*/
+/* Specific Class */
 .no-padding {
   padding: 0;
 }
@@ -296,7 +299,7 @@ a:hover, a:focus, a:active {
 }
 
 .margin-30 {
-  margin: 30px 30px;
+  margin: 30px;
 }
 
 .margin-right-30 {
@@ -370,34 +373,34 @@ hr {
 }
 
 .hr-about {
-  border-bottom: 5px dashed #96CFFA;
+  border-bottom: 5px dashed #96cffa;
 }
 
 .ux-ui-design {
-  background-color: #D7ECBE;
-  color: #7C8B6A;
+  background-color: #d7ecbe;
+  color: #7c8b6a;
 }
 
 .ux-design {
-  background-color: #B9E1F6;
-  color: #6F8C9A;
+  background-color: #b9e1f6;
+  color: #6f8c9a;
 }
 
 .html-css {
-  background-color: #BAFDEE;
-  color: #6CA296;
+  background-color: #bafdee;
+  color: #6ca296;
 }
 
 .design-tools {
   width: 100%;
-  background-color: #F7BA64;
-  color: #FFFFFF;
+  background-color: #f7ba64;
+  color: #fff;
 }
 
 .developing-tools {
   width: 100%;
-  background-color: #7FC8FF;
-  color: #FFFFFF;
+  background-color: #7fc8ff;
+  color: #fff;
 }
 
 .margin-space {
@@ -413,15 +416,15 @@ hr {
 }
 
 .think {
-  background-color: #EEF8FF;
+  background-color: #eef8ff;
 }
 
 .make {
-  background-color: #FFFBF0;
+  background-color: #fffbf0;
 }
 
 .check {
-  background-color: #FFF4ED;
+  background-color: #fff4ed;
 }
 
 /* Progress bar styleing */
@@ -431,42 +434,42 @@ hr {
   top: 0;
   z-index: 9999;
   width: 100%;
-  background-color: #D8D8D8;
+  background-color: #d8d8d8;
   box-shadow: none;
 }
 
 .progress-container {
   width: 100%;
   height: 8px;
-  background: #D8D8D8;
+  background: #d8d8d8;
 }
 
 .progress-bar {
   height: 8px;
-  background-image: linear-gradient(45deg, #FFA62E, #EA4D2C);
+  background-image: linear-gradient(45deg, #ffa62e, #ea4d2c);
   width: 0%;
 }
 
 /* Specific ID */
 #copyright {
   padding: 15px 0;
-  border-top: solid 1px #5D6874;
+  border-top: solid 1px #5d6874;
   width: 100%;
-  color: #5D6874;
+  color: #5d6874;
   font-size: 0.75em;
   text-align: center;
   margin-bottom: 0;
 }
 
 #wrap-up {
-  background-color: #FAF0E2;
+  background-color: #faf0e2;
   padding: 30px 40px;
   border-radius: 30px;
 }
 
 .highlight {
   display: inline;
-  background-color: #FAF0E2;
+  background-color: #faf0e2;
 }
 
 /* Hero Image CSS Animation */
@@ -476,12 +479,14 @@ hr {
     transform-origin: 45% 60%;
   }
 
-  7%, 60% {
+  7%,
+  60% {
     transform: rotate(-15deg);
     transform-origin: 45% 60%;
   }
 
-  67%, 100% {
+  67%,
+  100% {
     transform: rotate(0deg);
     transform-origin: 45% 60%;
   }
@@ -501,12 +506,14 @@ hr {
     transform-origin: 45% 65%;
   }
 
-  7%, 60% {
+  7%,
+  60% {
     transform: rotate(5deg);
     transform-origin: 45% 65%;
   }
 
-  70%, 100% {
+  70%,
+  100% {
     transform: rotate(0deg);
     transform-origin: 45% 65%;
   }
@@ -606,12 +613,15 @@ hr {
     transform-origin: 61% 37%;
   }
 
-  20%, 60%, 100% {
+  20%,
+  60%,
+  100% {
     transform: translate(0, 5px);
     transform-origin: 61% 37%;
   }
 
-  40%, 80% {
+  40%,
+  80% {
     transform: translate(0, 30px);
     transform-origin: 61% 37%;
   }
@@ -621,7 +631,7 @@ hr {
   animation: 12s light-bulb-movement infinite alternate linear;
 }
 
-/*Project #3 animation*/
+/* Project #3 animation */
 @keyframes color-change {
   0% {
     fill: #edc655;
@@ -668,8 +678,8 @@ hr {
   animation: 25s cloud-move-reverse infinite alternate linear;
 }
 
-/*Responsive Design*/
-@media only screen and (min-width:640px) {
+/* Responsive Design */
+@media only screen and (min-width: 640px) {
   header {
     text-align: unset;
   }
@@ -818,17 +828,18 @@ hr {
     bottom: 20px;
     right: 20px;
   }
+}
 
-  @media only screen and (min-width:1024px) {
-    .container {
-      max-width: 1200px;
-    }
-
-    .col-ld-7 {
-      width: 60%;
-    }
-
-    .col-ld-5 {
-      width: 40%;
-    }
+@media only screen and (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
   }
+
+  .col-ld-7 {
+    width: 60%;
+  }
+
+  .col-ld-5 {
+    width: 40%;
+  }
+}
