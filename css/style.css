@@ -218,11 +218,11 @@ footer h3 {
   font-size: 0.875em;
   text-decoration: none;
   background-color: #fff;
-  color: #ffab2d !important;
+  color: #e85202 !important;
   font-weight: 500;
   text-align: center;
   padding: 8px 16px;
-  border: solid 4px #ffab2d;
+  border: solid 4px #e85202;
   border-radius: 5px;
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
   transition: background-color 0.5s;
@@ -231,7 +231,7 @@ footer h3 {
 
 .button:hover,
 .button:focus {
-  background-color: #ffab2d;
+  background-color: #e85202;
   color: #fff !important;
 }
 
@@ -268,12 +268,12 @@ footer h3 {
 
 /* Hyperlinks */
 a {
-  color: #cc6540;
+  color: #b1522f;
   text-decoration: none;
 }
 
 a:visited {
-  color: #cc6540;
+  color: #b1522f;
 }
 
 a:hover,
