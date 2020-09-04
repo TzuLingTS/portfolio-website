@@ -19,10 +19,12 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
-  color: #323232;
+  color: #5b6776;
 }
 
 h1 {
+  color: #323551;
+  letter-spacing: 0.05em;
   font-size: 2em;
   font-weight: 500;
   line-height: 1.2;
@@ -30,6 +32,8 @@ h1 {
 }
 
 h2 {
+  color: #323551;
+  letter-spacing: 0.05em;
   font-size: 1.5em;
   font-weight: 500;
   line-height: 1.2;
@@ -37,6 +41,8 @@ h2 {
 }
 
 h3 {
+  color: #323551;
+  letter-spacing: 0.05em;
   font-size: 1.17em;
   font-weight: 500;
   line-height: 1.2;
@@ -44,6 +50,8 @@ h3 {
 }
 
 h4 {
+  color: #323551;
+  letter-spacing: 0.05em;
   font-size: 1em;
   font-weight: 500;
   line-height: 1.2;
@@ -82,12 +90,12 @@ nav>ul>li>a {
   padding: 0 12px;
   font-weight: 500;
   font-size: 1em;
-  color: #353941 !important;
+  color: #5b6776 !important;
   text-decoration: none;
 }
 
 nav>ul>li>a:visited {
-  color: #353941;
+  color: #5b6776;
 }
 
 nav>ul>li>a:hover,
@@ -209,6 +217,20 @@ footer h3 {
   padding: 5px;
   border-radius: 5px;
   margin: 10px 0;
+}
+
+.readability {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.bullet-list {
+  padding-left: 20px;
+}
+
+.subtitle {
+  color: #323551;
+  letter-spacing: 0.05em;
 }
 
 /* Buttons */
