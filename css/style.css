@@ -4,7 +4,6 @@ Primary(orange):#FFAB2D
 Secondary(blue):#4AB8E1
 Text(black):#323232
 */
-
 /* Default Elements */
 * {
   box-sizing: border-box;
@@ -231,6 +230,14 @@ footer h3 {
 .subtitle {
   color: #323551;
   letter-spacing: 0.05em;
+}
+
+.bg-fff {
+  background-color: #fff;
+}
+
+.side-spacing {
+  padding: 0 15px;
 }
 
 /* Buttons */
