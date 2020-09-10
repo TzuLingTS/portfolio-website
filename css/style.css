@@ -503,6 +503,22 @@ hr {
 }
 
 /* Hero Image CSS Animation */
+@keyframes fade-in {
+  from {
+    transform: translate(-300px, 0);
+    opacity: 20%;
+  }
+
+  to {
+    transform: translate(0, 0);
+    opacity: 100%;
+  }
+}
+
+#layer_1 {
+  animation: 0.8s fade-in 1 normal forwards ease-out;
+}
+
 @keyframes upper-body-movement {
   0% {
     transform: rotate(0deg);
