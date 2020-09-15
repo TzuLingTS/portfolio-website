@@ -677,6 +677,23 @@ hr {
   animation: 12s light-bulb-movement infinite alternate linear;
 }
 
+/* About page animation */
+@keyframes me-movement {
+  from {
+    transform: translate(-300px, 0);
+    opacity: 20%;
+  }
+
+  to {
+    transform: translate(0, 0);
+    opacity: 100%;
+  }
+}
+
+#my-picture {
+  animation: 0.8s me-movement 1 normal forwards ease-out;
+}
+
 /* Project #3 animation */
 @keyframes color-change {
   0% {
