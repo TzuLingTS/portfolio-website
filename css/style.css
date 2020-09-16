@@ -398,6 +398,10 @@ a:active {
   padding: 30px 0;
 }
 
+.semi-hightlight {
+  background-image: linear-gradient(#fff 50%, #cce9ff 50%);
+}
+
 hr {
   border: 0;
 }
@@ -499,7 +503,7 @@ hr {
 
 .highlight {
   display: inline;
-  background-color: #faf0e2;
+  background-color: #ffebc2;
 }
 
 /* Hero Image CSS Animation */
