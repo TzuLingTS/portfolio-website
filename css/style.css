@@ -130,7 +130,7 @@ nav>ul>li>a:focus {
   margin: 0;
 }
 
-.project .navtoggle .icon{
+.project .navtoggle .icon {
   top: 28px;
 }
 
@@ -242,6 +242,10 @@ footer h3 {
 
 .side-spacing {
   padding: 0 15px;
+}
+
+.email-copy {
+  display: none;
 }
 
 /* Buttons */
@@ -359,7 +363,7 @@ a:active {
 
 .social {
   display: block;
-  margin: 10px 0;
+  margin: 15px 0;
 }
 
 .social span {
@@ -508,10 +512,6 @@ hr {
 .highlight {
   display: inline;
   background-color: #ffebc2;
-}
-
-#email {
-  display: none;
 }
 
 /* Hero Image CSS Animation */
@@ -867,12 +867,74 @@ hr {
     background-size: cover;
   }
 
+  .margin-bottom {
+    margin-bottom: 0;
+  }
+
   footer p {
     width: 100%;
   }
 
   footer h3 {
     width: 100%;
+  }
+
+  .email-copy {
+    display: inline;
+    font-size: 0.7em;
+    padding-left: 50px;
+    margin: 0;
+  }
+
+  .email-copy img {
+    width: 4%;
+    margin: 0;
+  }
+
+  /* Tooltip container */
+  .tooltip {
+    position: relative;
+    display: inline-block;
+  }
+
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 150px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  /* Tooltip arrow */
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 20%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+
+  /* Show the tooltip text when  mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
   }
 
   #work .decoration {
