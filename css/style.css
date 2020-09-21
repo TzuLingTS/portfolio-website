@@ -130,6 +130,10 @@ nav>ul>li>a:focus {
   margin: 0;
 }
 
+.project .navtoggle .icon{
+  top: 28px;
+}
+
 .navtoggle.responsive {
   display: flex;
   flex-direction: column;
@@ -504,6 +508,10 @@ hr {
 .highlight {
   display: inline;
   background-color: #ffebc2;
+}
+
+#email {
+  display: none;
 }
 
 /* Hero Image CSS Animation */
