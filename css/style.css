@@ -826,6 +826,12 @@ hr {
     align-items: center;
   }
 
+  .flex-row-align-top {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
   .flex-column-center {
     display: flex;
     flex-direction: column;
