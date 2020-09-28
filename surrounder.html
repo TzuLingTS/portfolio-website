@@ -20,6 +20,7 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@600&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -595,10 +596,17 @@
         </div>
         <!--Column for email-->
         <div class="column social-flex col-md-6 col-ld-5">
-          <a href="mailto:tzuling.ts@gmail.com" class="social flex-row-align-center">
+          <div>
+          <a href="mailto:tzuling.ts@gmail.com" class="social flex-row-align-center margin-bottom">
             <img src="img/social-media-icon/gmail.png" alt="Email Icon" class="icon">
             <span><strong>Email</strong> me!</span>
           </a>
+          <p class="email-copy tooltip">
+            <span id="emailCopy" onclick="copyElementText()">TzuLingTS@gmail.com</span>
+            <img src="img/social-media-icon/clipboard.svg" alt="Copy Email Icon">
+            <span class="tooltiptext" id="myTooltip">Copy to Clipboard</span>
+          </p>
+        </div>
           <a href="LINKEDIN-URL" target="_blank" class="social flex-row-align-center">
             <img src="img/social-media-icon/linkedin.png" alt="LinkedIn Icon" class="icon">
             <span>Find me on <strong>LinkedIn</strong>!</span>
