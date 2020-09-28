@@ -86,7 +86,8 @@ nav>ul {
 }
 
 nav>ul>li>a {
-  padding: 0 12px;
+  display: block;
+  padding: 5px 12px;
   font-weight: 500;
   font-size: 1em;
   color: #5b6776 !important;
@@ -100,6 +101,7 @@ nav>ul>li>a:visited {
 nav>ul>li>a:hover,
 nav>ul>li>a:focus {
   color: #ffab2d !important;
+  background-color: #F3FAFF;
 }
 
 .navtoggle {
@@ -125,13 +127,13 @@ nav>ul>li>a:focus {
 
 .navtoggle .icon {
   position: absolute;
-  top: 20px;
+  top: 18px;
   right: 16px;
   margin: 0;
 }
 
 .project .navtoggle .icon {
-  top: 28px;
+  top: 24px;
 }
 
 .navtoggle.responsive {
@@ -159,7 +161,8 @@ nav>ul>li>a:focus {
 }
 
 .logo {
-  width: 33px;
+  width: 100%;
+  max-width: 33px;
   margin: 0;
 }
 
@@ -246,6 +249,10 @@ footer h3 {
 
 .email-copy {
   display: none;
+}
+
+:focus {
+  outline: none;
 }
 
 /* Buttons */
@@ -362,7 +369,7 @@ a:active {
 }
 
 .social {
-  display: block;
+  display: inline-block;
   margin: 15px 0;
 }
 
@@ -377,8 +384,8 @@ a:active {
 }
 
 .small-img {
-  width: 100%;
   max-width: 100px;
+  margin-top:30px;
 }
 
 .medium-img img {
@@ -503,7 +510,7 @@ hr {
   margin-bottom: 0;
 }
 
-#wrap-up {
+.wrap-up {
   background-color: #faf0e2;
   padding: 30px 40px;
   border-radius: 30px;
@@ -781,6 +788,11 @@ hr {
     font-size: 0.75em;
   }
 
+  nav>ul>li>a:hover,
+  nav>ul>li>a:focus {
+    background-color: #fff;
+  }
+
   .navtoggle li:not(:last-child) {
     display: inline-block;
   }
@@ -799,6 +811,10 @@ hr {
 
   .hero-image {
     padding: 30px;
+  }
+
+  .small-img {
+    margin-top: 0;;
   }
 
   .col-md-6 {
@@ -830,6 +846,11 @@ hr {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+  }
+
+  .flex-row {
+    display: flex;
+    flex-direction: row;
   }
 
   .flex-column-center {
@@ -869,12 +890,32 @@ hr {
   .about-background {
     background-image: url(../img/background-image/about-background.png);
     background-position: left;
+    background-position-x: -100px;
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .margin-bottom {
     margin-bottom: 0;
+  }
+
+  .sidebar-nav {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .sidebar-nav ul {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 6em;
+  }
+
+  .text-plus {
+    margin-top: 80px;
+  }
+
+  .text-minus {
+    margin-top: -80px;
   }
 
   footer p {
@@ -893,7 +934,7 @@ hr {
   }
 
   .email-copy img {
-    width: 4%;
+    width: 4.5%;
     margin: 0;
   }
 
@@ -907,7 +948,7 @@ hr {
   .tooltip .tooltiptext {
     visibility: hidden;
     width: 150px;
-    background-color: #555;
+    background-color: #ffbe55;
     color: #fff;
     text-align: center;
     padding: 5px 0;
@@ -930,14 +971,21 @@ hr {
     content: "";
     position: absolute;
     top: 100%;
-    left: 20%;
+    left: 47%;
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: #555 transparent transparent transparent;
+    border-color: #ffbe55 transparent transparent transparent;
   }
 
-  /* Show the tooltip text when  mouse over the tooltip container */
+  #emailCopy {
+    font-family: "Cabin", sans-serif;
+    font-size: 1.25em;
+    letter-spacing: 0.1em;
+    color: #323551;
+  }
+
+  /* Show the tooltip text when mouse over the tooltip container */
   .tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
@@ -985,4 +1033,7 @@ hr {
   .col-ld-5 {
     width: 40%;
   }
+
+  .about-background {
+    background-position-x: 0;
 }
