@@ -23,7 +23,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@600&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="project">
   <header>
     <div class="progress-header">
       <div class="progress-container">
@@ -53,11 +53,25 @@
   </header>
   <main>
     <div class="section">
+      <div class="hero-bg-image">
+        <div class="column">
+          <picture>
+            <source srcset="img/surrounder/hero/surrounder-hero@2.png" media="(max-width:767px)">
+            <img src="img/surrounder/hero/surrounder-hero@1.png" alt="Surround·er Hero Image" class="margin-top-0">
+          </picture>
+        </div>
+        <div class="hero-text-center hero-bg-copy">
+          <h1 class="text-align-center">Surround·er</h1>
+          <h3 class="text-align-center">SCAVENGER HUNT MOBILE GAME</h3>
+          <p>Surround·er is a scavenger hunt game, that helps bring people together in new environments while showing them fun and interesting facts and useful information about their new school and city.</p>
+        </div>
+      </div>
       <div class="container">
         <div class="section">
           <!--Hero section-->
           <div class="container" id="hero">
-            <div class="row flex-row-align-center">
+
+            <!--<div class="row flex-row-align-center">
               <div class="column col-md-6">
                 <picture>
                   <source srcset="img/words/words-hero-image@1.png" media="(max-width:767px)">
@@ -72,25 +86,29 @@
               <button onclick="topFunction()" id="topButton" title="Go to top">
                 <img src="img/nav-icon/top.png" alt="Top" class="no-margin">
               </button>
-            </div>
+            </div>-->
           </div>
         </div>
         <!--Close hero Section-->
         <div class="row flex-row">
           <div class="column sidebar-nav col-md-2">
+            <h3 class="text-align-center sidebar-headline">Quick Jump</h3>
             <ul>
               <li><a href="#overview">Overview</a></li>
               <li><a href="#purpose-and-context">Purpose and Context</a></li>
+              <li><a href="#objective">Objective</a></li>
               <li><a href="#process-and-insight">Process and Insight</a></li>
-              <ul>
-                <li><a href="#approach">Approach</a></li>
-                <li><a href="#empathy">Emapthy</a></li>
-                <li><a href="#define">Define</a></li>
-                <li><a href="#ideate">Ideate</a></li>
-                <li><a href="#prototype">Prototype</a></li>
-                <li><a href="#test">Test</a></li>
-                <li><a href="#handover">Handover</a></li>
-              </ul>
+              <div class="sub-nav">
+                <ul>
+                  <li><a href="#approach">Approach</a></li>
+                  <li><a href="#empathy">Emapthy</a></li>
+                  <li><a href="#define">Define</a></li>
+                  <li><a href="#ideate">Ideate</a></li>
+                  <li><a href="#prototype">Prototype</a></li>
+                  <li><a href="#test">Test</a></li>
+                  <li><a href="#handover">Handover</a></li>
+                </ul>
+              </div>
               <li><a href="#challenge">Challenge</a></li>
               <li><a href="#final-showcase">Final Showcase</a></li>
               <li><a href="#wrap-up">Wrap-Up</a></li>
@@ -99,11 +117,13 @@
           <div class="column workflow col-md-10">
             <div class="section">
               <!--Overview section-->
-              <div class="text-minus" id="overview"> <!--empty div that goes behind header-->
+              <div class="text-minus" id="overview">
+                <!--empty div that goes behind header-->
                 <a name="target">&nbsp;</a>
               </div>
               <div class="container">
                 <h2 class="text-align-center text-plus">OVERVIEW</h2><!-- add text-plus to add positive margin-->
+                <hr class="surrounder-hr">
                 <!--Row for div-->
                 <div class="row flex-row-align-center">
                   <!--Column for OVERVIEW #1-->
@@ -112,7 +132,7 @@
                       <li class="margin-space"><span class="subtitle">ROLE:</span> <br><strong>UX / UI Designer</strong></li>
                       <li class="margin-space"><span class="subtitle">OCCASION:</span> <br><strong>School Project</strong></li>
                       <li class="margin-space"><span class="subtitle">DURATION:</span> <br><strong>August 2019 - May 2020 (9 Months)</strong></li>
-                      <li class="margin-space"><span class="subtitle">METHOD:</span> <br><strong>Design Thinking and Iterative Design</strong></li>
+                      <li class="margin-space"><span class="subtitle">METHOD:</span> <br><strong>Design Thinking, Iterative Design</strong></li>
                     </ul>
                   </div>
                   <div class="column col-md-6 overview-layout">
@@ -126,423 +146,676 @@
               </div>
             </div>
             <!--Close Overview section-->
+            <div class="section-divider">
+              <!--Section Divide-->
+              <div class="dot1"></div>
+              <div class="dot2"></div>
+              <div class="dot3"></div>
+            </div>
+            <!--CLose Section Divide-->
             <div class="section">
               <!--Purpose and Context section-->
-              <div class="text-minus" id="purpose-and-context"> <!--empty div that goes behind header-->
+              <div class="text-minus" id="purpose-and-context">
+                <!--empty div that goes behind header-->
                 <a name="target">&nbsp;</a>
               </div>
               <div class="container">
                 <h2 class="text-align-center text-plus">Purpose and Context</h2><!-- add text-plus to add positive margin-->
-                <p>After going to the university, I always thought that it would be great if we have some activities or something we can do together with other students to enrich our sense of belongings to the school and the surrounding.</p>
-                <p>So I decided to design a mobile game app that focuses on the students who just go to the university and hoping to become more familiar with the new environment and knowing new people who can hang out with them together.</p>
+                <hr class="surrounder-hr">
+                <p>After going to the university, I always thought that it would be great if we have some activities or something we can do together with other students to <span class="highlight">enrich our sense of belongings to the school and the
+                    surrounding.</span></p>
+                <p>So I decided to design a mobile game app that <span class="highlight">focuses on the students who just go to the university</span> and hoping to become more familiar with the new environment and knowing new people who can hang out
+                  with them together.</p>
               </div>
             </div>
             <!--Close Purpose and context section-->
+            <div class="section-divider">
+              <!--Section Divide-->
+              <div class="dot1"></div>
+              <div class="dot2"></div>
+              <div class="dot3"></div>
+            </div>
+            <!--CLose Section Divide-->
             <div class="section">
               <!--Objective section-->
-              <div class="text-minus" id="objective"> <!--empty div that goes behind header-->
+              <div class="text-minus" id="objective">
+                <!--empty div that goes behind header-->
                 <a name="target">&nbsp;</a>
               </div>
               <div class="container">
                 <h2 class="text-align-center text-plus">Objective</h2><!-- add text-plus to add positive margin-->
-                <ul>
-                  <li>Enable students to enjoy social scavenger hunts for virtual objects and locations in their cities.</li>
-                  <li>Showing useful information about their new schools and cities using more fun and interesting way.</li>
-                </ul>
+                <hr class="surrounder-hr">
+                <p class="font-weight-500 border-shadow">Enable students to enjoy social scavenger hunts for virtual objects and locations in their cities.</p>
+                <p class="font-weight-500 border-shadow">Showing useful information about their new schools and cities using more fun and interesting way.</p>
               </div>
             </div>
             <!--Close Objective section-->
+            <div class="section-divider">
+              <!--Section Divide-->
+              <div class="dot1"></div>
+              <div class="dot2"></div>
+              <div class="dot3"></div>
+            </div>
+            <!--CLose Section Divide-->
             <div class="section">
               <!--Process and Insight section-->
-              <div class="text-minus" id="process-and-insight"> <!--empty div that goes behind header-->
+              <div class="text-minus" id="process-and-insight">
+                <!--empty div that goes behind header-->
                 <a name="target">&nbsp;</a>
               </div>
               <div class="container">
                 <h2 class="text-align-center text-plus">Process and Insight</h2><!-- add text-plus to add positive margin-->
-                <div class="text-minus" id="approach"> <!--empty div that goes behind header-->
+                <hr class="surrounder-hr">
+                <div class="text-minus" id="approach">
+                  <!--empty div that goes behind header-->
                   <a name="target">&nbsp;</a>
                 </div>
-                <div class="container">
+                <div class="container padding-bottom-20">
                   <h3 class="text-align-center text-plus">Approach</h3>
-                  <div class="column">
-                    <h4>Problem Statement: </h4>
+                  <hr class="surrounder-hr-2">
+                  <div class="column padding-30">
+                    <h4><span class="design-thinking-color">APPROACH</span>Problem Statement: </h4>
                     <p>As a new student entering a university in a new city, it can be difficult to meet new people and get to know your surroundings. Currently students tend to use google maps to explore and FB and Line (etc.) to connect with
-                      people. These products have some good features but they are too broad and not focussed on what a new student may want or need.</p>
+                      people. These products have some good features but they <span class="highlight">might be too broad and not focussed on what a new student may want or need.</span></p>
                     <p>I use design thinking and iterative design to approach the problem, and define the key point:
-                      <span>How might we use more interesting ways to engage new students and make information and social events more approachable?</span></p>
+                      <span class="highlight font-weight-500">How might we use more interesting ways to engage new students and make information and social events more approachable?</span></p>
                   </div>
-                  <div class="column">
-                    <h4>Process I used: </h4>
-                    <div class="row flex-row-align-top">
-                      <div class="column col-md-2 text-align-center">
-                        <p>EMPATHY</p>
-                        <p>Competitive Analysis</p>
-                        <p>User Research</p>
-                      </div>
-                      <div class="column col-md-2 text-align-center">
-                        <p>DEFINE</p>
-                        <p>Persona</p>
-                        <p>User Journey Map</p>
-                      </div>
-                      <div class="column col-md-2 text-align-center">
-                        <p>IDEATE</p>
-                        <p>Structure Diagram</p>
-                        <p>User Flow</p>
-                        <p>Site Map</p>
-                      </div>
-                      <div class="column col-md-2 text-align-center">
-                        <p>PROTOTYPE</p>
-                        <p>Low-Fi Wireframe</p>
-                        <p>Mid-Fi Wireframe</p>
-                        <p>High-Fi Wireframe</p>
-                      </div>
-                      <div class="column col-md-2 text-align-center">
-                        <p>TEST</p>
-                        <p>Usability Test</p>
-                        <p>Refined Wireframe</p>
-                      </div>
-                      <div class="column col-md-2 text-align-center">
-                        <p>HANDOVER</p>
-                        <p>Style Guide</p>
-                        <p>Prototype</p>
-                      </div>
+                  <div class="column padding-30">
+                    <h4><span class="design-thinking-color">APPROACH</span>Process I used: </h4>
+                    <div>
+                      <picture>
+                        <source srcset="img/surrounder/approach/design-thinking-process@1.png" media="(max-width:767px)">
+                        <img src="img/surrounder/approach/design-thinking-process@1.png" alt="Design Thinking Process">
+                      </picture>
                     </div>
                   </div>
                 </div>
-                <div class="text-minus" id="empathy"> <!--empty div that goes behind header-->
+                <div class="text-minus" id="empathy">
+                  <!--empty div that goes behind header-->
                   <a name="target">&nbsp;</a>
                 </div>
-                <div class="container">
+                <div class="container padding-bottom-20">
                   <h3 class="text-align-center text-plus">Empathy</h3><!-- add text-plus to add positive margin-->
-                  <div class="column">
+                  <hr class="surrounder-hr-2">
+                  <div class="column padding-30">
                     <!--Competitive Analysis-->
-                    <h4>Competitive Analysis</h4>
-                    <p>I conduct a COMPETITIVE ANALYSIS process to see what is already in the marketplace. I am looking for what has been done that is successful, what hasn’t worked well and whether there are any gaps in the market that my product
-                      can fill.</p>
-                    <p>GeoCaching and Pokeman Go were 2 examples of existing products I researched. I used a traditional SWOT analysis format to present the findings:</p>
+                    <h4><span class="design-thinking-color">EMAPTHY</span>Competitive Analysis</h4>
+                    <p>I conduct a COMPETITIVE ANALYSIS process to see what is already in the marketplace. I am looking for <span class="highlight">what has been done that is successful, what hasn’t worked well and whether there are any gaps in the
+                        market that my product can fill.</span></p>
+                    <p>GeoCaching and Pokeman Go were 2 examples of existing products I researched. I used a traditional <span class="highlight">SWOT analysis format</span> to present the findings:</p>
                     <div class="column">
-                      <picture>
-                        <source srcset="img/words/" media="(max-width:767px)">
-                        <img src="img/words/" alt="SWOT">
-                      </picture>
-                      <picture>
-                        <source srcset="img/words/" media="(max-width:767px)">
-                        <img src="img/words/" alt="SWOT">
-                      </picture>
+                      <div class="row flex-row-align-center">
+                        <div class="column col-md-5">
+                          <picture>
+                            <source srcset="img/surrounder/empathy/swot/swot01@2.png" media="(max-width:767px)">
+                            <img src="img/surrounder/empathy/swot/swot01@1.png" alt="SWOT" class="shadow">
+                          </picture>
+                        </div>
+                        <div class="column col-md-5">
+                          <picture>
+                            <source srcset="img/surrounder/empathy/swot/swot02@2.png" media="(max-width:767px)">
+                            <img src="img/surrounder/empathy/swot/swot02@1.png" alt="SWOT" class="shadow">
+                          </picture>
+                        </div>
+                      </div>
                     </div>
-                    <p>Take Away:</p>
-                    <ul>
-                      <li>Free to use without extra cost.</li>
-                      <li>Frequent social event with other players in same region.</li>
-                    </ul>
+                    <div class="border-shadow padding-bottom-20">
+                      <p class="font-weight-500 text-align-center">Take Away:</p>
+                      <ul class="font-weight-500">
+                        <li>Free to use without extra cost.</li>
+                        <li>Frequent social event with other players in same region.</li>
+                      </ul>
+                    </div>
                   </div>
-                  <div class="column">
+                  <div class="column padding-30">
                     <!--User Research-->
-                    <h3 class="text-align-center">User Research</h3>
-                    <p>After defining the basic business strategy and core application concept, I now begin to understand users’ needs, goals and frustrations.</p>
+                    <h4><span class="design-thinking-color">EMAPTHY</span>User Research</h4>
+                    <p>After defining the basic business strategy and core application concept, I now begin to <span class="highlight">understand users’ needs, goals and frustrations.</span></p>
                     <p>I used Survey Monkey to gather specific user information, and interviewed with 5 participants.</p>
                     <div class="column">
-                      <picture>
-                        <source srcset="img/words/" media="(max-width:767px)">
-                        <img src="img/words/" alt="User Survey">
-                      </picture>
-                      <picture>
-                        <source srcset="img/words/" media="(max-width:767px)">
-                        <img src="img/words/" alt="User Interview">
-                      </picture>
+                      <div class="row flex-row-align-center">
+                        <div class="column col-md-5">
+                          <picture>
+                            <source srcset="img/surrounder/empathy/user-survey/user-survey01@2.png" media="(max-width:767px)">
+                            <img src="img/surrounder/empathy/user-survey/user-survey01@1.png" alt="User Survey" class="shadow">
+                          </picture>
+                        </div>
+                        <div class="column col-md-5">
+                          <picture>
+                            <source srcset="img/surrounder/empathy/user-survey/user-survey02@2.png" media="(max-width:767px)">
+                            <img src="img/surrounder/empathy/user-survey/user-survey02@1.png" alt="User Survey" class="shadow">
+                          </picture>
+                        </div>
+                      </div>
+                      <div class="column image-overlap">
+                        <picture class="image-5-1">
+                          <source srcset="img/surrounder/empathy/user-research/user-research01@2.png" media="(max-width:767px)">
+                          <img src="img/surrounder/empathy/user-research/user-research01@1.png" alt="User Research" class="shadow">
+                        </picture>
+                        <picture class="image-5-2">
+                          <source srcset="img/surrounder/empathy/user-research/user-research02@2.png" media="(max-width:767px)">
+                          <img src="img/surrounder/empathy/user-research/user-research02@1.png" alt="User Research" class="shadow">
+                        </picture>
+                        <picture class="image-5-3">
+                          <source srcset="img/surrounder/empathy/user-research/user-research03@2.png" media="(max-width:767px)">
+                          <img src="img/surrounder/empathy/user-research/user-research03@1.png" alt="User Research" class="shadow">
+                        </picture>
+                        <picture class="image-5-4">
+                          <source srcset="img/surrounder/empathy/user-research/user-research04@2.png" media="(max-width:767px)">
+                          <img src="img/surrounder/empathy/user-research/user-research04@1.png" alt="User Research" class="shadow">
+                        </picture>
+                        <picture class="image-5-5">
+                          <source srcset="img/surrounder/empathy/user-research/user-research05@2.png" media="(max-width:767px)">
+                          <img src="img/surrounder/empathy/user-research/user-research05@1.png" alt="User Research" class="shadow">
+                        </picture>
+                      </div>
                     </div>
-                    <p>After that, I used affinity map to organise my observations. By doing so, I can organise the user research findings into more visual groupings. This can help me identify relationships between different components of the app.
+                    <p>After that, I used <span class="highlight">affinity map to organise my observations.</span> By doing so, I can organise the user research findings into more visual groupings. This can help me <span class="highlight">identify
+                        relationships between different components of the app.</span>
                     </p>
                     <div class="column">
-                      <picture>
-                        <source srcset="img/words/" media="(max-width:767px)">
-                        <img src="img/words/" alt="Affinity Map">
-                      </picture>
+                      <div class="row flex-row-align-center">
+                        <div class="column col-md-5">
+                          <picture>
+                            <source srcset="img/surrounder/empathy/affinity-map/affinity-map01@2.png" media="(max-width:767px)">
+                            <img src="img/surrounder/empathy/affinity-map/affinity-map01@1.png" alt="Affinity Map" class="shadow">
+                          </picture>
+                        </div>
+                        <div class="column col-md-5">
+                          <picture>
+                            <source srcset="img/surrounder/empathy/affinity-map/affinity-map02@2.png" media="(max-width:767px)">
+                            <img src="img/surrounder/empathy/affinity-map/affinity-map02@1.png" alt="Affinity Map" class="shadow">
+                          </picture>
+                        </div>
+                      </div>
                     </div>
-                    <p>Take Away:</p>
-                    <ul>
-                      <li>Almost all the interviewees don’t like to go outside alone, but prefer to hang out with friends and do some activities like eating out, exploring places and wandering around.</li>
-                      <li>Reason: Lack of motivation, or not sufficient enough to motivate them.</li>
-                      <li>60% of the interviewees don’t mind to play alone, but 80% of the interviewees prefer to play with other players.</li>
-                      <li>60% of the interviewees likes to have some activities to do with other students so that they can familiar with each other.</li>
-                    </ul>
+                    <div class="border-shadow padding-bottom-20">
+                      <p class="font-weight-500 text-align-center">Take Away:</p>
+                      <ul class="font-weight-500">
+                        <li>Almost all the interviewees <span class="highlight">don’t like to go outside alone</span>, but prefer to hang out with friends and do some activities like eating out, exploring places and wandering around.</li>
+                        <li>Reason: <span class="highlight">Lack of motivation, or not sufficient enough to motivate them to go outside alone.</span></li>
+                        <li>60% of the interviewees don’t mind to play alone, but 80% of the interviewees <span class="highlight">prefer to play with other players.</span></li>
+                        <li>60% of the interviewees <span class="highlight">likes to have some activities to do with other students</span> so that they can familiar with each other.</li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="text-minus" id="define"> <!--empty div that goes behind header-->
+              <div class="text-minus" id="define">
+                <!--empty div that goes behind header-->
                 <a name="target">&nbsp;</a>
               </div>
-              <div class="container">
+              <div class="container padding-bottom-20">
                 <h3 class="text-align-center text-plus">Define</h3><!-- add text-plus to add positive margin-->
-                <div class="column">
+                <hr class="surrounder-hr-2">
+                <div class="column padding-30">
                   <!--User Persona-->
-                  <h4>User Persona</h4>
+                  <h4><span class="design-thinking-color">DEFINE</span>User Persona</h4>
                   <p>Using PERSONAS helps me empathise with my user. Designing to a specific audience informs my design thinking and ensures better execution.</p>
-                  <div class="column">
-                    <picture>
-                      <source srcset="img/words/" media="(max-width:767px)">
-                      <img src="img/words/" alt="Kelly Persona">
+                  <div class="column image-overlap">
+                    <picture class="image-3-1">
+                      <source srcset="img/surrounder/define/persona/persona01@2.png" media="(max-width:767px)">
+                      <img src="img/surrounder/define/persona/persona01@1.png" alt="User Persona" class="shadow">
                     </picture>
-                    <picture>
-                      <source srcset="img/words/" media="(max-width:767px)">
-                      <img src="img/words/" alt="Peter Persona">
+                    <picture class="image-3-2">
+                      <source srcset="img/surrounder/define/persona/persona02@2.png" media="(max-width:767px)">
+                      <img src="img/surrounder/define/persona/persona02@1.png" alt="User Persona" class="shadow">
                     </picture>
-                    <picture>
-                      <source srcset="img/words/" media="(max-width:767px)">
-                      <img src="img/words/" alt="Vincent Persona">
+                    <picture class="image-3-3">
+                      <source srcset="img/surrounder/define/persona/persona03@2.png" media="(max-width:767px)">
+                      <img src="img/surrounder/define/persona/persona03@1.png" alt="User Persona" class="shadow">
                     </picture>
                   </div>
                   <p>I have 3 personas that will interact with the Surround·er for differents purposes:</p>
-                  <ul>
-                    <li>Kelly who wants to meet new friends and knowing the surroundings.</li>
-                    <li>Peter who wants the motivation to go outdoors more.</li>
-                    <li>Vincent who want to play the games with his own friends.</li>
-                  </ul>
+                  <div class="font-weight-500">
+                    <p class="border-shadow">Kelly who wants to <span class="highlight">meet new friends and knowing the surroundings.</span></p>
+                    <p class="border-shadow">Peter who wants <span class="highlight">the motivation to go outdoors more.</span></p>
+                    <p class="border-shadow">Vincent who want to <span class="highlight">play the games with his own friends.</span></p>
+                  </div>
                 </div>
-                <div class="column">
+                <div class="column padding-30">
                   <!--User Journey Map-->
-                  <h4>User Journey Map</h4>
+                  <h4><span class="design-thinking-color">DEFINE</span>User Journey Map</h4>
                   <p>I then used User Journey Map to visualise processes and emotional motivations a user may have while using the application and making decisions.</p>
-                  <p>It helps me begin to connect the user motivation with specific steps and tasks they will take to accomplish a goal.</p>
-                  <div class="column">
-                    <picture>
-                      <source srcset="img/words/" media="(max-width:767px)">
-                      <img src="img/words/" alt="Kelly Journey Map">
+                  <p>It helps me begin to <span class="highlight">connect the user motivation with specific steps and tasks</span> they will take to accomplish a goal.</p>
+                  <div class="column image-overlap">
+                    <picture class="image-3-1">
+                      <source srcset="img/surrounder/define/user-journey-map/user-journey-map01@2.png" media="(max-width:767px)">
+                      <img src="img/surrounder/define/user-journey-map/user-journey-map01@1.png" alt="User Journey Map" class="shadow">
                     </picture>
-                    <picture>
-                      <source srcset="img/words/" media="(max-width:767px)">
-                      <img src="img/words/" alt="Peter Journey Map">
+                    <picture class="image-3-2">
+                      <source srcset="img/surrounder/define/user-journey-map/user-journey-map02@2.png" media="(max-width:767px)">
+                      <img src="img/surrounder/define/user-journey-map/user-journey-map02@1.png" alt="User Journey Map" class="shadow">
                     </picture>
-                    <picture>
-                      <source srcset="img/words/" media="(max-width:767px)">
-                      <img src="img/words/" alt="Vincent Journey Map">
+                    <picture class="image-3-3">
+                      <source srcset="img/surrounder/define/user-journey-map/user-journey-map03@2.png" media="(max-width:767px)">
+                      <img src="img/surrounder/define/user-journey-map/user-journey-map03@1.png" alt="User Journey Map" class="shadow">
                     </picture>
                   </div>
-                  <p>Our primary Features should help users’ to achieve:</p>
-                  <ul>
-                    <li>The mobile game that can meet new people easily.</li>
-                    <li>Getting to know their surrounding.</li>
-                    <li>Motivate the user to go out more even alone.</li>
-                    <li>Having things to do together with their own friends.</li>
-                  </ul>
+                  <div class="border-shadow padding-bottom-20">
+                    <p>Our primary Features should help users’ to achieve:</p>
+                    <ul class="font-weight-500">
+                      <li>The mobile game that can <span class="highlight">meet new people easily.</span></li>
+                      <li><span class="highlight">Getting to know their surrounding.</span></li>
+                      <li><span class="highlight">Motivate the user to go out more even alone.</span></li>
+                      <li><span class="highlight">Having things to do together with their own friends.</span></li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-              <div class="text-minus" id="ideate"> <!--empty div that goes behind header-->
+              <div class="text-minus" id="ideate">
+                <!--empty div that goes behind header-->
                 <a name="target">&nbsp;</a>
               </div>
-              <div class="container">
+              <div class="container padding-bottom-20">
                 <h3 class="text-align-center text-plus">Ideate</h3><!-- add text-plus to add positive margin-->
-                <div class="column">
+                <hr class="surrounder-hr-2">
+                <div class="column padding-30">
                   <!--Structure Diagram-->
-                  <h4>Structure Diagram</h4>
+                  <h4><span class="design-thinking-color">IDEATE</span>Structure Diagram</h4>
                   <p>Another way to help me to further define the core concept and visualise the overall process is through the structure diagram. Along with the Problem Statement, it allows me to communicate the fundamental idea.</p>
-                  <p>I used it as a high-level eco-system diagrams as part of my overall visualisation process. These fundamental sketches help me understand the “moving parts” of Surround•er and also act as key consensus building tools for
-                    stakeholders.</p>
-                  <div class="column">
-                    <picture>
-                      <source srcset="img/words/" media="(max-width:767px)">
-                      <img src="img/words/" alt="Structure Map">
+                  <p><span class="highlight">I used it as a high-level eco-system diagrams as part of my overall visualisation process.</span> These fundamental sketches help me understand the 'moving parts' of Surround•er and also act as key
+                    consensus building tools for stakeholders.</p>
+                  <div class="column image-overlap">
+                    <picture class="image-1-1">
+                      <source srcset="img/surrounder/ideate/structure-diagram/structure-diagram@2.png" media="(max-width:767px)">
+                      <img src="img/surrounder/ideate/structure-diagram/structure-diagram@1.png" alt="Structure Diagram" class="shadow">
                     </picture>
                   </div>
-                  <p>Main Features:</p>
-                  <ul>
-                    <li>Find a hunt to play.</li>
-                    <li>Find the Team to join with other players.</li>
-                    <li>Create a Hunt for others to play.</li>
-                  </ul>
+                  <div class="border-shadow padding-bottom-20">
+                    <p class="font-weight-500 text-align-center">Main Features:</p>
+                    <ul class="font-weight-500">
+                      <li><span class="highlight">Find a hunt to play.</span></li>
+                      <li><span class="highlight">Find the Team to join with other players.</span></li>
+                      <li><span class="highlight">Create a Hunt for others to play.</span></li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="column">
+                <div class="column padding-30">
                   <!--User Flow-->
-                  <h4>User Flow</h4>
+                  <h4><span class="design-thinking-color">IDEATE</span>User Flow</h4>
                   <p>I defined 5 primary flows based on my personas' needs, and map out every steps they will take from starting to complete the task:</p>
-                  <ul>
-                    <li>Find a Hunt</li>
-                    <li>Corporate with other players</li>
-                    <li>Private Invitation</li>
-                    <li>Hunt Play (Solo)</li>
-                    <li>Create a Hunt</li>
+                  <ul class="font-weight-500">
+                    <li> <span class="highlight">Find a Hunt</span></li>
+                    <li><span class="highlight">Corporate with other players</span></li>
+                    <li><span class="highlight">Private Invitation</span></li>
+                    <li><span class="highlight">Hunt Play (Solo)</span></li>
+                    <li><span class="highlight">Create a Hunt</span></li>
                   </ul>
-                  <div class="column">
-                    <picture>
-                      <source srcset="img/words/" media="(max-width:767px)">
-                      <img src="img/words/" alt="User Flow">
+                  <div class="column image-overlap">
+                    <picture class="image-4-1">
+                      <source srcset="img/surrounder/ideate/user-flow/user-flow01@2.png" media="(max-width:767px)">
+                      <img src="img/surrounder/ideate/user-flow/user-flow01@1.png" alt="User Flow" class="shadow">
+                    </picture>
+                    <picture class="image-4-2">
+                      <source srcset="img/surrounder/ideate/user-flow/user-flow02@2.png" media="(max-width:767px)">
+                      <img src="img/surrounder/ideate/user-flow/user-flow02@1.png" alt="User Flow" class="shadow">
+                    </picture>
+                    <picture class="image-4-3">
+                      <source srcset="img/surrounder/ideate/user-flow/user-flow03@2.png" media="(max-width:767px)">
+                      <img src="img/surrounder/ideate/user-flow/user-flow03@1.png" alt="User Flow" class="shadow">
+                    </picture>
+                    <picture class="image-4-4">
+                      <source srcset="img/surrounder/ideate/user-flow/user-flow04@2.png" media="(max-width:767px)">
+                      <img src="img/surrounder/ideate/user-flow/user-flow04@1.png" alt="User Flow" class="shadow">
                     </picture>
                   </div>
                 </div>
-                <div class="column">
+                <div class="column padding-30">
                   <!--Site Map-->
-                  <h4>Site Map</h4>
+                  <h4><span class="design-thinking-color">IDEATE</span>Site Map</h4>
                   <p>After defining the user flows, I use a SITE MAP to visualise how the navigation should be structured, identify where the content will sit and show the relationship between different screens and pages.</p>
-                  <p>I kept coming back to refine my site map in the process of the ideation. I refined my site map based on interviews and card sorting exercise with users and minimised the pages and steps for users to complete the goals.</p>
-                  <div class="column">
-                    <picture>
-                      <source srcset="img/words/" media="(max-width:767px)">
-                      <img src="img/words/" alt="Site Map">
+                  <p>I kept coming back to refine my site map in the process of the ideation. <span class="highlight">I refined my site map based on interviews and card sorting exercise with users and minimised the pages and steps for users to
+                      complete the goals.</span></p>
+                  <div class="column image-overlap">
+                    <picture class="image-s">
+                      <source srcset="img/surrounder/ideate/sitemap/sitemap01@2.png" media="(max-width:767px)">
+                      <img src="img/surrounder/ideate/sitemap/sitemap01@1.png" alt="Site Map" class="shadow">
+                    </picture>
+                    <picture class="image-m">
+                      <source srcset="img/surrounder/ideate/sitemap/sitemap02@2.png" media="(max-width:767px)">
+                      <img src="img/surrounder/ideate/sitemap/sitemap02@1.png" alt="Site Map" class="shadow">
+                    </picture>
+                    <picture class="image-l">
+                      <source srcset="img/surrounder/ideate/sitemap/sitemap03@2.png" media="(max-width:767px)">
+                      <img src="img/surrounder/ideate/sitemap/sitemap03@1.png" alt="Site Map" class="shadow">
                     </picture>
                   </div>
                 </div>
               </div>
-              <div class="text-minus" id="prototype"> <!--empty div that goes behind header-->
+              <div class="text-minus" id="prototype">
+                <!--empty div that goes behind header-->
                 <a name="target">&nbsp;</a>
               </div>
-              <div class="container">
+              <div class="container padding-bottom-20">
                 <h3 class="text-align-center text-plus">Prototype</h3><!-- add text-plus to add positive margin-->
-                <div class="column">
+                <hr class="surrounder-hr-2">
+                <div class="column padding-30">
                   <!--Wireframe-->
-                  <h4>Prototype</h4>
+                  <h4><span class="design-thinking-color">PROTOTYPE</span>Prototype</h4>
                   <div class="row flex-row-align-center">
                     <div class="column col-md-6">
                       <picture>
-                        <source srcset="img/words/" media="(max-width:767px)">
-                        <img src="img/words/" alt="Low-Fi">
+                        <source srcset="img/surrounder/prototype/low-fi/low-fi@2.png" media="(max-width:767px)">
+                        <img src="img/surrounder/prototype/low-fi/low-fi@1.png" alt="Low-Fi">
                       </picture>
                     </div>
                     <div class="column col-md-6">
-                      <p>The beginning of my wireframe process starts with pen and paper to sketch the LOW-FI WIREFRAME for my main features and highlight only the high-level functionality of a design.</p>
+                      <h4>Low-Fi Wireframe</h4>
+                      <p>The beginning of my wireframe process starts with pen and paper to sketch the LOW-FI WIREFRAME <span class="highlight">for my main features and highlight only the high-level functionality of a design.</span></p>
                       <p>To get my initial thinking out quickly, I start with pen and paper and sketch my ideas. This allows me to efficiently visualise different approaches to the problem. I know I will be refining these concepts as we move forward.
                       </p>
                     </div>
                   </div>
                   <div class="row flex-row-align-center">
                     <div class="column col-md-6">
-                      <p>MID-FI WIREFRAME allows me to refine the look and feel of the app as well as the interaction design.</p>
+                      <h4>Mid-Fi Wireframe</h4>
+                      <p>MID-FI WIREFRAME allows me to <span class="highlight">refine the look and feel of the app as well as the interaction design.</span></p>
                       <p>In this phase I am replacing elements in my sketches with more 'real' content. I begin with the things I know about the design; whether it is text labels or headlines or navigation items. This is where I really begin to flesh
                         out the site hierarchy and function.</p>
                     </div>
                     <div class="column col-md-6">
                       <picture>
-                        <source srcset="img/words/" media="(max-width:767px)">
-                        <img src="img/words/" alt="Mid-Fi">
+                        <source srcset="img/surrounder/prototype/mid-fi/mid-fi@2.png" media="(max-width:767px)">
+                        <img src="img/surrounder/prototype/mid-fi/mid-fi@1.png" alt="Mid-Fi">
                       </picture>
                     </div>
                   </div>
                   <div class="row flex-row-align-center">
                     <div class="column col-md-6">
                       <picture>
-                        <source srcset="img/words/" media="(max-width:767px)">
-                        <img src="img/words/" alt="Hi-Fi">
+                        <source srcset="img/surrounder/prototype/hi-fi/hi-fi@2.png" media="(max-width:767px)">
+                        <img src="img/surrounder/prototype/hi-fi/hi-fi@1.png" alt="Hi-Fi">
                       </picture>
                     </div>
                     <div class="column col-md-6">
-                      <p>Finally, I use HIGH-FI WIREFRAME that refer to the level of details and functionality built into a prototype. My HIGH-FI WIREFRAMES are ready for prototyping and testing and almost ready to begin the UI design phase.</p>
+                      <h4>Hi-Fi Wireframe</h4>
+                      <p>Finally, I use HIGH-FI WIREFRAME that refer to the level of details and functionality built into a prototype. My HIGH-FI WIREFRAMES are <span class="highlight">ready for prototyping and testing and almost ready to begin the
+                          UI design phase.</span></p>
                       <p>The more finished my High-Fi wireframes, the better the feedback to my prototype in user testing. Moreover, it helps me to effectively communicate functionality to developers and other stakeholders.
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="text-minus" id="test"> <!--empty div that goes behind header-->
+              <div class="text-minus" id="test">
+                <!--empty div that goes behind header-->
                 <a name="target">&nbsp;</a>
               </div>
-              <div class="container">
+              <div class="container padding-bottom-20">
                 <h3 class="text-align-center text-plus">Test</h3><!-- add text-plus to add positive margin-->
-                <div class="column">
+                <hr class="surrounder-hr-2">
+                <div class="column padding-30">
                   <!--Usability Test-->
-                  <h4>Usability Test</h4>
+                  <h4><span class="design-thinking-color">TEST</span>Usability Test</h4>
                   <p>I conduct the formal USABILITY TEST with 5 participants to see if the solution meets their needs and if my UX Design is working well.</p>
-                  <p>After conducting the usability test, I used affinity mapping techniques to help visualise the learnings and prioritise the importance of the issues brought to light. This visual approach to organising feedback also helps in
-                    communicating with stakeholders.</p>
-                  <div class="column">
-                    <picture>
-                      <source srcset="img/words/" media="(max-width:767px)">
-                      <img src="img/words/" alt="Usability Test">
+                  <p>After conducting the usability test, I used <span class="highlight">affinity mapping techniques to help visualise the learnings and prioritise the importance of the issues brought to light.</span> This visual approach to
+                    organising feedback also helps in communicating with stakeholders.</p>
+                  <div class="column image-overlap">
+                    <picture class="image-3-1">
+                      <source srcset="img/surrounder/test/usability-test/usability-test01@2.png" media="(max-width:767px)">
+                      <img src="img/surrounder/test/usability-test/usability-test01@1.png" alt="Usability Test" class="shadow">
+                    </picture>
+                    <picture class="image-3-2">
+                      <source srcset="img/surrounder/test/usability-test/usability-test02@2.png" media="(max-width:767px)">
+                      <img src="img/surrounder/test/usability-test/usability-test02@1.png" alt="Usability Test" class="shadow">
+                    </picture>
+                    <picture class="image-3-3">
+                      <source srcset="img/surrounder/test/usability-test/usability-test03@2.png" media="(max-width:767px)">
+                      <img src="img/surrounder/test/usability-test/usability-test03@1.png" alt="Usability Test" class="shadow">
                     </picture>
                   </div>
-                  <p>I then determined which errors are most critical based on a high frequency of reports or a high level severity and created a test report to communicate my findings and propose solutions.</p>
-                  <p>Main Focus:</p>
-                  <ul>
-                    <li>Label then hunt icons on the home page.</li>
-                    <li>Emphasis the reward system.</li>
-                    <li>Relabel the navigation icons.</li>
-                  </ul>
+                  <p>I then determined which errors are most critical <span class="highlight">based on a high frequency of reports or a high level severity</span> and created a test report to communicate my findings and propose solutions.</p>
+                  <div class="border-shadow padding-bottom-20">
+                    <p class="font-weight-500 text-align-center">Main Focus:</p>
+                    <ul class="font-weight-500">
+                      <li><span class="highlight">Label then hunt icons on the home page.</span></li>
+                      <li><span class="highlight">Emphasis the reward system.</span></li>
+                      <li><span class="highlight">Relabel the navigation icons.</span></li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="column">
+                <div class="column padding-30">
                   <!--Refined Wireframe-->
-                  <h4>Refined Wireframe</h4>
-                  <p>Usability test results give me new information to refine my wireframe deck before moving on to the final design. At this point, I am confident any issues or possible friction has been removed or solved.</p>
+                  <h4><span class="design-thinking-color">TEST</span>Refined Wireframe</h4>
+                  <p><span class="highlight">Usability test results give me new information to refine my wireframe deck before moving on to the final design.</span> At this point, I am confident any issues or possible friction has been removed or
+                    solved.</p>
                   <p>I take the time to refine my wireframe deck from the usability feedback. I really appreciate the ability to constantly improve the design and concept throughout the process.</p>
-                  <div class="column">
-                    <picture>
-                      <source srcset="img/words/" media="(max-width:767px)">
-                      <img src="img/words/" alt="Refined Wireframe">
+                  <div class="column image-overlap">
+                    <picture class="image-5-1">
+                      <source srcset="img/surrounder/test/refined/refined01@2.png" media="(max-width:767px)">
+                      <img src="img/surrounder/test/refined/refined01@1.png" alt="Refined Wireframe" class="shadow">
+                    </picture>
+                    <picture class="image-5-2">
+                      <source srcset="img/surrounder/test/refined/refined02@2.png" media="(max-width:767px)">
+                      <img src="img/surrounder/test/refined/refined02@1.png" alt="Refined Wireframe" class="shadow">
+                    </picture>
+                    <picture class="image-5-3">
+                      <source srcset="img/surrounder/test/refined/refined03@2.png" media="(max-width:767px)">
+                      <img src="img/surrounder/test/refined/refined03@1.png" alt="Refined Wireframe" class="shadow">
+                    </picture>
+                    <picture class="image-5-4">
+                      <source srcset="img/surrounder/test/refined/refined04@2.png" media="(max-width:767px)">
+                      <img src="img/surrounder/test/refined/refined04@1.png" alt="Refined Wireframe" class="shadow">
+                    </picture>
+                    <picture class="image-5-5">
+                      <source srcset="img/surrounder/test/refined/refined05@2.png" media="(max-width:767px)">
+                      <img src="img/surrounder/test/refined/refined05@1.png" alt="Refined Wireframe" class="shadow">
                     </picture>
                   </div>
                 </div>
               </div>
-              <div class="text-minus" id="handover"> <!--empty div that goes behind header-->
+              <div class="text-minus" id="handover">
+                <!--empty div that goes behind header-->
                 <a name="target">&nbsp;</a>
               </div>
-              <div class="container">
+              <div class="container padding-bottom-20">
                 <h3 class="text-align-center text-plus">Handover</h3><!-- add text-plus to add positive margin-->
-                <div class="column">
+                <hr class="surrounder-hr-2">
+                <div class="column padding-30">
                   <!--Style Guide-->
-                  <h4>Style Guide</h4>
-                  <p>I includedall the design elements used on the Surround·er helps communicate my design with the team or others who might be working on a project in the future.</p>
-                  <p>Style guides will help me communicate my design with anyone on my team or others who might be working on a project after me. I always treat my style guides as a living document, any time I make a visual change, I will always go
-                    back to adjust my style guides to reflect it.</p>
-                  <picture>
-                    <source srcset="img/words/" media="(max-width:767px)">
-                    <img src="img/words/" alt="Style Guide">
-                  </picture>
+                  <h4><span class="design-thinking-color">HANDOVER</span>Style Guide</h4>
+                  <p>I included all the design elements used on the Surround·er helps communicate my design with the team or others who might be working on a project in the future.</p>
+                  <p><span class="highlight">Style guides will help me communicate my design with anyone on my team or others who might be working on a project after me.</span> I always treat my style guides as a <span class="highlight">living
+                      document,</span> any time I make a visual change, I will always go back to adjust my style guides to reflect it.</p>
+                  <div class="column image-overlap">
+                    <picture class="image-9-1">
+                      <source srcset="img/surrounder/handover/style-guide/style-guide01@2.png" media="(max-width:767px)">
+                      <img src="img/surrounder/handover/style-guide/style-guide01@1.png" alt="Style Guide" class="shadow">
+                    </picture>
+                    <picture class="image-9-2">
+                      <source srcset="img/surrounder/handover/style-guide/style-guide02@2.png" media="(max-width:767px)">
+                      <img src="img/surrounder/handover/style-guide/style-guide02@1.png" alt="Style Guide" class="shadow">
+                    </picture>
+                    <picture class="image-9-3">
+                      <source srcset="img/surrounder/handover/style-guide/style-guide03@2.png" media="(max-width:767px)">
+                      <img src="img/surrounder/handover/style-guide/style-guide03@1.png" alt="Style Guide" class="shadow">
+                    </picture>
+                    <picture class="image-9-4">
+                      <source srcset="img/surrounder/handover/style-guide/style-guide04@2.png" media="(max-width:767px)">
+                      <img src="img/surrounder/handover/style-guide/style-guide04@1.png" alt="Style Guide" class="shadow">
+                    </picture>
+                    <picture class="image-9-5">
+                      <source srcset="img/surrounder/handover/style-guide/style-guide05@2.png" media="(max-width:767px)">
+                      <img src="img/surrounder/handover/style-guide/style-guide05@1.png" alt="Style Guide" class="shadow">
+                    </picture>
+                    <picture class="image-9-6">
+                      <source srcset="img/surrounder/handover/style-guide/style-guide06@2.png" media="(max-width:767px)">
+                      <img src="img/surrounder/handover/style-guide/style-guide06@1.png" alt="Style Guide" class="shadow">
+                    </picture>
+                    <picture class="image-9-7">
+                      <source srcset="img/surrounder/handover/style-guide/style-guide07@2.png" media="(max-width:767px)">
+                      <img src="img/surrounder/handover/style-guide/style-guide07@1.png" alt="Style Guide" class="shadow">
+                    </picture>
+                    <picture class="image-9-8">
+                      <source srcset="img/surrounder/handover/style-guide/style-guide08@2.png" media="(max-width:767px)">
+                      <img src="img/surrounder/handover/style-guide/style-guide08@1.png" alt="Style Guide" class="shadow">
+                    </picture>
+                    <picture class="image-9-9">
+                      <source srcset="img/surrounder/handover/style-guide/style-guide09@2.png" media="(max-width:767px)">
+                      <img src="img/surrounder/handover/style-guide/style-guide09@1.png" alt="Style Guide" class="shadow">
+                    </picture>
+                  </div>
                 </div>
-                <div class="column">
+                <div class="column padding-30">
                   <!--Prototype-->
-                  <h4>Prototype</h4>
+                  <h4><span class="design-thinking-color">HANDOVER</span>Prototype</h4>
                   <p>I used InVision to build the prototype, at this point, I'm ready to handover my design to developers.</p>
+                </div>
+                <div class="secondary-button text-align-center shadow padding-30">
+                  <a href="https://invis.io/Z4WL7BWASG2" target="_blank">See prototype on InVision</a>
                 </div>
               </div>
             </div>
             <!--Close Process and Insight section-->
+            <div class="section-divider">
+              <!--Section Divide-->
+              <div class="dot1"></div>
+              <div class="dot2"></div>
+              <div class="dot3"></div>
+            </div>
+            <!--CLose Section Divide-->
             <div class="section">
               <!--Challenge section-->
-              <div class="text-minus" id="challenge"> <!--empty div that goes behind header-->
+              <div class="text-minus" id="challenge">
+                <!--empty div that goes behind header-->
                 <a name="target">&nbsp;</a>
               </div>
               <div class="container">
                 <h2 class="text-align-center text-plus">Challenge</h2><!-- add text-plus to add positive margin-->
-                <div class="column">
-                  <h3 class="text-align-center">Mascot Idea is a Failure</h3>
-                  <p>At first, the way for users to play the Surround·er is to collect the mascots from different places, but the problems is that:</p>
-                  <p>Firstly, the mascots didn’t catch the users’ eyes, and it would be too similar to Pokemon Go. According to our participant from the first round of the usability testing, if there is no storyline behind these mascots, they won’t
-                    consider playing the game and collecting these mascots.</p>
-                  <p>Secondly, users can create their games for other players to play. Here comes the problem: When they are creating their own hunt game, they will go through the process to decide which mascot they want the players to collect in
-                    this game. If they can look through our mascots library, which may lose their curiosity and demotivate them to collect the mascots anymore.</p>
-                    <h4>Solution</h4>
-                    <p>So I changed the mascot’s idea to a more manageable idea, which is using virtual items to replace the mascots: </p>
-                    <ul>
-                      <li>Players will receive a task in each of the hunt games. They need to go through different locations to collect these virtual items to win the game. </li>
-                    </ul>
-                    <p>This way, we can not only make sure these virtual items can have more connections with each hunts’ theme but also make users more focus on the game itself.</p>
+                <hr class="surrounder-hr">
+                <div class="column padding-30">
+                  <div class="padding-bottom-20">
+                    <h3 class="text-align-center padding-bottom-20">Mascot Idea is a Failure</h3>
+                    <p>At first, the way for users to play the Surround·er is to collect the mascots from different places, but the problems is that:</p>
+                    <p>Firstly, the mascots <span class="highlight">didn’t catch the users’ eyes</span>, and it would be too similar to Pokemon Go. According to our participant from the first round of the usability testing, <span class="highlight">if
+                        there is no storyline behind these mascots, they won’t consider playing the game and collecting these mascots.</span></p>
+                    <p>Secondly, users can create their games for other players to play. Here comes the problem: When they are creating their own hunt game, they will go through the process to decide which mascot they want the players to collect in
+                      this game. <span class="highlight">If they can look through our mascots library, which may lose their curiosity and demotivate them to collect the mascots anymore.</span></p>
+                    <div class="column">
+                      <picture>
+                        <source srcset="img/surrounder/challenge/mascot@2.png" media="(max-width:767px)">
+                        <img src="img/surrounder/challenge/mascot@1.png" alt="Mascot Idea is a Failure">
+                      </picture>
+                    </div>
+                  </div>
+                  <h4>Solution</h4>
+                  <p>So I changed the mascot’s idea to a more manageable one, which is <span class="highlight">using virtual items to replace the mascots</span>: </p>
+                  <ul class="font-weight-500 border-shadow">
+                    <li class="no-bullet">Players will <span class="highlight">receive a task</span> in each of the hunt games. They need to <span class="highlight">go through different locations to collect these virtual items to win the game.</span>
+                    </li>
+                  </ul>
+                  <p>This way, we can not only make sure these virtual items can <span class="highlight">have more connections with each hunts’ theme</span> but also make users more focus on the game itself.</p>
+                  <div class="column">
+                    <picture>
+                      <source srcset="img/surrounder/challenge/challenge@2.png" media="(max-width:767px)">
+                      <img src="img/surrounder/challenge/challenge@2.png" alt="Mascot Idea is a Failure">
+                    </picture>
+                  </div>
+                </div>
+                <div class="column padding-30">
+                  <h3 class="text-align-center padding-bottom-20">What Went Well</h3>
+                  <div class="padding-bottom-20">
+                    <h4>User Research</h4>
+                    <p>At first, I was nervous about doing the user research and thought it was overwhelming, but after conducting the user interview, I collected so much useful information from them.</p>
+                    <p>Knowing their pain from the existing products, the itch they want to scratch, and the problem they want to solve <span class="highlight">makes me have more concrete ideas about how Surround·er should be designed.</span></p>
+                  </div>
+                  <div>
+                    <h4>User Persona</h4>
+                    <p>After conducting the very efficient user research, I then created 3 primary personas for my project, Surround·er. It was interesting to create a persona based on the real data. During this process, I make sure <span
+                        class="highlight">I kept their frustrations, motivations, goals and needs in mind every now and then during the whole process.</span></p>
+                  </div>
+                </div>
+                <div class="column padding-30">
+                  <h3 class="text-align-center padding-bottom-20">What Didn't Go Well</h3>
+                  <div class="padding-bottom-20">
+                    <h4>UI Design</h4>
+                    <p>This is my first time designing UI design and combining every visual design element on the screen with the colour.</p>
+                    <p>At first, my colour combination and the design principle's use didn't come into place and looked dodgy, but I tried to <span class="highlight">get inspired by other designers by browsing the Dribble, Behance, and Instagram to
+                        make me immerse in this field more.</span> As a result, I improve my sense of aesthetics and happy with my output.</p>
+                    <div class="column">
+                      <picture>
+                        <source srcset="img/surrounder/challenge/ui/ui01@2.png" media="(max-width:767px)">
+                        <img src="img/surrounder/challenge/ui/ui01@2.png" alt="UI Design" class="no-margin">
+                      </picture>
+                      <picture>
+                        <source srcset="img/surrounder/challenge/ui/ui02@2.png" media="(max-width:767px)">
+                        <img src="img/surrounder/challenge/ui/ui02@2.png" alt="UI Design" class="no-margin">
+                      </picture>
+                      <picture>
+                        <source srcset="img/surrounder/challenge/ui/ui03@2.png" media="(max-width:767px)">
+                        <img src="img/surrounder/challenge/ui/ui03@2.png" alt="UI Design" class="no-margin">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="column padding-30">
+                    <h3 class="text-align-center padding-bottom-20">What Sould Be Improve</h3>
+                    <div>
+                      <p>I spent too much time making the wireframe and prototype look pixel perfect. As a result, I was in a rush to do the revision on time. And because of that, when conducting the usability test, it made me biases and started to
+                        take any comment personally.</P>
+                      <p>Next time, I will make sure <span class="highlight">I break project work into time-blocks so as to manage workload better while not compromising on quality.</span> And when conducting the usability test, I will <span
+                          class="highlight">reset the mindset and always be objective because I know in the end, users matters the most.</span>
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
             <!--Close Challenge section-->
+            <div class="section-divider">
+              <!--Section Divide-->
+              <div class="dot1"></div>
+              <div class="dot2"></div>
+              <div class="dot3"></div>
+            </div>
+            <!--CLose Section Divide-->
             <div class="section">
               <!--Final Showcase section-->
-              <div class="text-minus" id="final-showcase"> <!--empty div that goes behind header-->
+              <div class="text-minus" id="final-showcase">
+                <!--empty div that goes behind header-->
                 <a name="target">&nbsp;</a>
               </div>
               <div class="container">
                 <h2 class="text-align-center text-plus">Final Showcase</h2><!-- add text-plus to add positive margin-->
-                <div class="column"><!--Moodboard-->
+                <hr class="surrounder-hr">
+                <div class="column">
+                  <!--Moodboard-->
                   <div class="column">
                     <picture>
-                      <source srcset="img/words/" media="(max-width:767px)">
-                      <img src="img/words/" alt="Moodboard">
+                      <source srcset="img/surrounder/final-showcase/moodboard01@2.png" media="(max-width:767px)">
+                      <img src="img/surrounder/final-showcase/moodboard01@2.png" alt="Moodboard" class="no-margin">
+                    </picture>
+                    <picture>
+                      <source srcset="img/surrounder/final-showcase/moodboard02@2.png" media="(max-width:767px)">
+                      <img src="img/surrounder/final-showcase/moodboard02@2.png" alt="Moodboard" class="no-margin">
+                    </picture>
+                    <picture>
+                      <source srcset="img/surrounder/final-showcase/moodboard03@2.png" media="(max-width:767px)">
+                      <img src="img/surrounder/final-showcase/moodboard03@2.png" alt="Moodboard" class="no-margin">
                     </picture>
                   </div>
-                </div>
-                <div class="column"><!--Demo Video-->
-                  <video src="videofile.ogg" autoplay poster="posterimage.jpg">
-
-                  </video>
+                  <div class="column">
+                    <video width="560" height="349" controls class="video">
+                      <source src="img/surrounder/final-showcase/demo.mp4" type="video/mp4">
+                      <source src="movie.ogg" type="video/ogg">
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
                 </div>
               </div>
             </div>
             <!--Close Final Showcase section-->
+            <div class="section-divider">
+              <!--Section Divide-->
+              <div class="dot1"></div>
+              <div class="dot2"></div>
+              <div class="dot3"></div>
+            </div>
+            <!--CLose Section Divide-->
             <div class="section">
               <!--Summary section-->
-              <div class="text-minus" id="wrap-up"> <!--empty div that goes behind header-->
+              <div class="text-minus" id="wrap-up">
+                <!--empty div that goes behind header-->
                 <a name="target">&nbsp;</a>
               </div>
               <div class="container">
@@ -550,14 +823,22 @@
                 </div>
                 <div class="column wrap-up">
                   <h3 class="text-align-center">WRAP UP</h3><!-- add text-plus to add positive margin-->
-                  <p>Digital products are 'living media'. They continue as long as the product is viable and supported. I continuously gather information and look ahead to ensure the product will keep meeting users’ needs.</p>
-                  <p>I applied the iterative design process throughout the entire design project cycle as a means to consistently improve usability. And also make another high-level plan for how I will continue to iterate on the project in the future.</p>
+                  <hr class="surrounder-hr">
+                  <div class="padding-bottom-20">
+                    <p>Digital products are 'living media'. They continue as long as the product is viable and supported. I continuously gather information and look ahead to ensure the product will keep meeting users’ needs.</p>
+                    <p>I applied the iterative design process throughout the entire design project cycle as a means to consistently improve usability. And also make another high-level plan for how I will continue to iterate on the project in the
+                      future.</p>
+                  </div>
                   <h4 class="text-align-center">NEW HYPOTHESIS</h4>
-                  <h4>Problem</h4>
-                  <p>Users may play the same hunt only once, how might we engage our users more and make them keep using and playing our application?</p>
-                  <h4>Proposal Solutions</h4>
-                  <p>Allow users to have more ways to decorate and custom their avatar, plus get various properties for their avatar when they complete the hunts might seem the good way to engage our users more.</p>
-                  <p>Or by adding the milestones or badges for the user so that they can see their journey(progress) </p>
+                  <div class="padding-bottom-20">
+                    <h4>Problem</h4>
+                    <p>Users may play the same hunt only once, how might we engage our users more and make them keep using and playing our application?</p>
+                  </div>
+                  <div>
+                    <h4>Proposal Solutions</h4>
+                    <p>Allow users to have more ways to decorate and custom their avatar, plus get various properties for their avatar when they complete the hunts might seem the good way to engage our users more.</p>
+                    <p>Or by adding the milestones or badges for the user so that they can see their journey(progress) </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -575,6 +856,7 @@
                 <a href="words.html" class="button">Next Project</a>
               </div>
             </div>
+          </div>
           </div>
         </div>
       </div>
@@ -597,16 +879,16 @@
         <!--Column for email-->
         <div class="column social-flex col-md-6 col-ld-5">
           <div>
-          <a href="mailto:tzuling.ts@gmail.com" class="social flex-row-align-center margin-bottom">
-            <img src="img/social-media-icon/gmail.png" alt="Email Icon" class="icon">
-            <span><strong>Email</strong> me!</span>
-          </a>
-          <p class="email-copy tooltip">
-            <span id="emailCopy" onclick="copyElementText()">TzuLingTS@gmail.com
-            <img src="img/social-media-icon/clipboard.svg" alt="Copy Email Icon"></span>
-            <span class="tooltiptext" id="myTooltip">Copy to Clipboard</span>
-          </p>
-        </div>
+            <a href="mailto:tzuling.ts@gmail.com" class="social flex-row-align-center margin-bottom">
+              <img src="img/social-media-icon/gmail.png" alt="Email Icon" class="icon">
+              <span><strong>Email</strong> me!</span>
+            </a>
+            <p class="email-copy tooltip">
+              <span id="emailCopy" onclick="copyElementText()">TzuLingTS@gmail.com
+                <img src="img/social-media-icon/clipboard.svg" alt="Copy Email Icon"></span>
+              <span class="tooltiptext" id="myTooltip">Copy to Clipboard</span>
+            </p>
+          </div>
           <a href="https://www.linkedin.com/in/tzulingtseng" target="_blank" class="social flex-row-align-center">
             <img src="img/social-media-icon/linkedin.png" alt="LinkedIn Icon" class="icon">
             <span>Find me on <strong>LinkedIn</strong>!</span>
