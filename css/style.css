@@ -1174,7 +1174,7 @@ hr {
   .about-background {
     background-image: url(../img/background-image/about-background.png);
     background-position: left;
-    background-position-x: -100px;
+    background-position-x: -500px;
     background-repeat: no-repeat;
     background-size: cover;
   }
