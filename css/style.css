@@ -430,19 +430,13 @@ hr {
   border-bottom: 5px dashed #96cffa;
 }
 
-.ux-ui-design {
-  background-color: #d7ecbe;
-  color: #7c8b6a;
-}
-
-.ux-design {
-  background-color: #b9e1f6;
-  color: #6f8c9a;
-}
-
-.html-css {
-  background-color: #bafdee;
-  color: #6ca296;
+.hr-thumbnail {
+  color: #323551;
+  background-color: #323551;
+  border: none;
+  height: 3px;
+  width: 80px;
+  margin-bottom: 5px;
 }
 
 .design-tools {
@@ -524,6 +518,26 @@ hr {
   border: none;
   height: 3px;
   width: 30px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.online-portfolio-hr {
+  color: #ffab2d;
+  background-color: #ffab2d;
+  border: none;
+  height: 4px;
+  width: 80px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.online-portfolio-hr-2 {
+  color: #2A94F4;
+  background-color: #2A94F4;
+  border: none;
+  height: 3px;
+  width: 40px;
   margin-top: 10px;
   margin-bottom: 20px;
 }
@@ -777,6 +791,57 @@ hr {
   grid-row-end: 4;
 }
 
+.image-3-1 {
+  grid-column-start: 2;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.image-3-2 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.image-3-3 {
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.image-2-1 {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.image-2-2 {
+  grid-column-start: 2;
+  grid-column-end: 7;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.image-2-1-s {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  z-index: 1;
+}
+
+.image-2-2-s {
+  grid-column-start: 2;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  z-index: 0;
+}
+
 .video {
   width: 100%;
   height: auto;
@@ -996,53 +1061,6 @@ hr {
   animation: 0.8s me-movement 1 normal forwards ease-out;
 }
 
-/* Project #3 animation */
-@keyframes color-change {
-  0% {
-    fill: #edc655;
-  }
-
-  50% {
-    fill: #fcffad;
-  }
-
-  100% {
-    fill: #f76414;
-  }
-}
-
-.sun {
-  animation: 4s color-change infinite alternate ease-in;
-}
-
-@keyframes cloud-move {
-  from {
-    transform: translate(0, 50px);
-  }
-
-  to {
-    transform: translate(200px, 50px);
-  }
-}
-
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
-}
-
-@keyframes cloud-move-reverse {
-  from {
-    transform: translate(446px, 48px);
-  }
-
-  to {
-    transform: translate(100px, 48px);
-  }
-}
-
-.cloud-back {
-  animation: 25s cloud-move-reverse infinite alternate linear;
-}
-
 /* Responsive Design */
 @media only screen and (min-width: 640px) {
   header {
@@ -1231,6 +1249,11 @@ hr {
     color: #7CC9A5 !important;
   }
 
+  .online-portfolio-sub-nav a:hover,
+  .online-portfolio-sub-nav a:focus {
+    color: #2A94F4 !important;
+  }
+
   .text-plus {
     margin-top: 80px;
   }
@@ -1331,9 +1354,6 @@ hr {
     margin-top: 0;
   }
 
-  #work .decoration {
-    width: 50%;
-  }
 
   #work h3 {
     margin-top: 0;
