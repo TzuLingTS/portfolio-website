@@ -1200,11 +1200,13 @@ hr {
   }
 
   .sidebar-headline {
+    background-color: #fff;
     text-decoration: underline;
     position: sticky;
     position: -webkit-sticky;
     top: 2.5em;
     padding-top: 20px;
+    z-index: 1;
   }
 
   .sidebar-nav ul {
