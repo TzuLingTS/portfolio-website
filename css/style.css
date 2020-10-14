@@ -1220,10 +1220,12 @@ hr {
     font-size: 0.8em;
     letter-spacing: 0.03em;
     font-weight: 500;
+    transition: all 0.1s ease-in-out;
   }
 
   .sidebar-nav a:hover,
-  .sidebar-nav a:focus {
+  .sidebar-nav a:focus,
+  .sidebar-nav a:active {
     color: #ffab2d;
   }
 
@@ -1237,7 +1239,8 @@ hr {
   }
 
   .sub-nav a:hover,
-  .suv-nav a:focus {
+  .sub-nav a:focus,
+  .sub-nav a:active {
     color: #7CC9A5 !important;
   }
 
