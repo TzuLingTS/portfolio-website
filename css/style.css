@@ -415,7 +415,8 @@ a:active {
 }
 
 .my-picture {
-  width: 80%;
+  width: 100%;
+  max-width: 400px;
 }
 
 .my-story {
@@ -1111,8 +1112,20 @@ hr {
     width: 50%;
   }
 
+  .col-md-7 {
+    width: 60%;
+  }
+
+  .col-md-5 {
+    width: 40%;
+  }
+
   .col-md-4 {
     width: 33.3%;
+  }
+
+  .col-md-8 {
+    width: 66.6%;
   }
 
   [class*="col-"] {
