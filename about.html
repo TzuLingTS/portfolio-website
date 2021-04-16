@@ -1,163 +1,292 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Tzu-Ling Tseng, camellove0221@gmail.com" />
+    <meta name="description" content="Tzu-Ling Tseng UX/UI Design Portfolio" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--Favicon-->
+    <link rel="shortcut icon" href="img/logo/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/favicons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="img/favicons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <!--Home Page Title-->
+    <title>Tzu-Ling Tseng | About</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="author" content="Tzu-Ling Tseng, camellove0221@gmail.com">
-  <meta name="description" content="Tzu-Ling Tseng UX/UI Design Portfolio">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!--Favicon-->
-  <link rel="shortcut icon" href="img/logo/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
-  <link rel="manifest" href="img/favicons/site.webmanifest">
-  <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
-  <!--Home Page Title-->
-  <title>Tzu-Ling Tseng | About</title>
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@600&display=swap" rel="stylesheet">
-</head>
+  <body class="about-background">
+    <header>
+      <!--Inner Container-->
+      <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
+          <a href="index.html" class="line-height-0">
+            <img src="img/logo/logo.png" alt="Tzu-Ling's Logo" class="logo" />
+          </a>
+          <nav>
+            <ul>
+              <li><a href="index.html#work">Project</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="navicon line-height-0"
+                  onclick="menuToggle()"
+                >
+                  <img
+                    src="img/nav-icon/bars.png"
+                    alt="navigation icon"
+                    class="icon"
+                  />
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!--Container-->
+      <div class="container">
+        <!--Row-->
+        <div class="row flex-row">
+          <!--column to hold the left container-->
+          <div class="column col-md-5 flex-column-center">
+            <picture class="my-picture">
+              <source srcset="img/me/me@1.png" media="(max-width:767px)" />
+              <img src="img/me/me@2.png" alt="My Picture" id="my-picture" />
+            </picture>
+            <!-- CTA for Resume-->
+            <div class="text-align-center" id="cv">
+              <a
+                href="img/me/tzuling-tseng-resume.pdf"
+                target="_blank"
+                class="button"
+                >See Resume</a
+              >
+            </div>
+          </div>
+          <!--column to hold the right container-->
+          <div class="column col-md-7">
+            <!--My Story-->
+            <div class="my-story">
+              <h1 class="text-align-center">Tzu-Ling Tseng</h1>
+              <h3 class="text-align-center">
+                <span class="semi-hightlight">UX/UI DESIGNER</span>
+              </h3>
+              <div class="margin-30">
+                <p>
+                  Hello, I’m Tzu-Ling Tseng. A UX designer with a background in
+                  electrical and electronic engineering office administration.
+                </p>
+                <p>
+                  As a personal assistant, I understand the importance of
+                  <span class="highlight">managing the overall workflow.</span>
+                  I make sure the procedure is executed well based on the
+                  defined decision we made upon the meeting, and
+                  <span class="highlight"
+                    >keep it flexible for any further changes according to the
+                    feedback</span
+                  >
+                  from the user and colleagues during the process.
+                </p>
+                <p>
+                  I also take accountability to
+                  <span class="highlight"
+                    >balance the needs across multiple teams(contractors,
+                    clients, users, suppliers, and engineers)</span
+                  >, collecting data and conditions from the user’s side and
+                  pass it back to the office.
+                </p>
+                <p>
+                  The same principles apply when it comes to designing a digital
+                  product. To ensure we have a better product that people enjoy
+                  using,
+                  <span class="highlight"
+                    >I focus on the user’s need, staying flexible on the
+                    planning and implementing points of view, and continuously
+                    iterating through the designing process.</span
+                  >
+                </p>
+                <p>
+                  Additionally, volunteering at homeless shelters in the UK
+                  makes me
+                  <span class="highlight"
+                    >a better communicator in a multicultural environment</span
+                  >. As part of my daily role, I take the responsibility to hand
+                  over and pass the works and messages to the staff and other
+                  volunteers. It’s crucial to understand the different
+                  communication styles across cultures, different ways of
+                  thinking, and how to provide feedback effectively.
+                </p>
+                <p>
+                  <span class="highlight"
+                    >My goal is to turn my passion into my profession by working
+                    as a UX designer</span
+                  >, using my skills and knowledge to offer companies different
+                  perspectives across the team.
+                </p>
+              </div>
+              <div class="about-section-divider">
+                <!--Section Divide-->
+                <div class="dot1"></div>
+                <div class="dot2"></div>
+                <div class="dot3"></div>
+              </div>
+              <!--CLose Section Divide-->
+            </div>
 
-<body class="about-background">
-  <header>
-    <!--Inner Container-->
-    <div class="container">
-      <div class="navtoggle" id="myNavtoggle">
-        <a href="index.html" class="line-height-0">
-          <img src="img/logo/logo.png" alt="Tzu-Ling's Logo" class="logo">
-        </a>
-        <nav>
-          <ul>
-            <li><a href="index.html#work">Project</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
-            <li>
-              <a href="javascript:void(0);" class="navicon line-height-0" onclick="menuToggle()">
-                <img src="img/nav-icon/bars.png" alt="navigation icon" class="icon">
+            <!--Skills and Tools-->
+            <div class="section tools">
+              <div class="column">
+                <h2 class="text-align-center">Skills</h2>
+              </div>
+              <!--Row-->
+              <div class="row">
+                <!--Column for Design Tools-->
+                <div class="column col-md-6" id="design-tool">
+                  <h3 class="decoration design-tools">UX / UI</h3>
+                  <ul>
+                    <li>User Research</li>
+                    <li>Task Analysis</li>
+                    <li>User Journey Map</li>
+                    <li>User Persona</li>
+                    <li>Information Architecture</li>
+                    <li>User Flow</li>
+                    <li>Usability Test</li>
+                    <li>Wireframe & Prototype</li>
+                  </ul>
+                </div>
+                <!--Column for Developing Tool-->
+                <div class="column col-md-6" id="developing-skill">
+                  <h3 class="decoration developing-tools">Front End</h3>
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Basic JavaScript</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--column right-->
+        </div>
+        <!--row-->
+      </div>
+      <!--Contianer-->
+    </main>
+    <!--This is for my Contact Information.-->
+    <footer id="contact">
+      <!-- Inner Cotainer-->
+      <div class="container">
+        <h2 class="text-align-center">Contact</h2>
+        <div class="row flex-row-align-center">
+          <div class="column col-md-6 col-ld-7">
+            <h3>Let's Get In Touch!</h3>
+            <p>
+              I'm ready for the new challenge! <br />If you like my works and
+              want to have some chat with me. Here's how you can reach me:
+            </p>
+          </div>
+          <!--Column for email-->
+          <div class="column social-flex col-md-6 col-ld-5">
+            <div>
+              <a
+                href="mailto:tzuling.ts@gmail.com"
+                class="social flex-row-align-center margin-bottom"
+              >
+                <img
+                  src="img/social-media-icon/gmail.png"
+                  alt="Email Icon"
+                  class="icon"
+                />
+                <span><strong>Email</strong> me!</span>
               </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </header>
-  <main>
-    <!--Container-->
-    <div class="container">
-      <!--Row-->
-      <div class="row flex-row">
-        <!--column to hold the left container-->
-        <div class="column col-md-5 flex-column-center">
-          <picture class="my-picture">
-            <source srcset="img/me/me@1.png" media="(max-width:767px)">
-            <img src="img/me/me@2.png" alt="My Picture" id="my-picture">
-          </picture>
-          <!-- CTA for Resume-->
-          <div class="text-align-center" id="cv">
-            <a href="img/me/tzuling-tseng-resume.pdf" target="_blank" class="button">See Resume</a>
+              <p class="email-copy tooltip">
+                <span id="emailCopy" onclick="copyElementText()"
+                  >TzuLing.TS@gmail.com
+                  <img
+                    src="img/social-media-icon/clipboard.svg"
+                    alt="Copy Email Icon"
+                /></span>
+                <span class="tooltiptext" id="myTooltip"
+                  >Copy to Clipboard</span
+                >
+              </p>
+            </div>
+            <a
+              href="https://www.linkedin.com/in/tzulingtseng"
+              target="_blank"
+              class="social flex-row-align-center"
+            >
+              <img
+                src="img/social-media-icon/linkedin.png"
+                alt="LinkedIn Icon"
+                class="icon"
+              />
+              <span>Find me on <strong>LinkedIn</strong>!</span>
+            </a>
+            <a
+              href="https://github.com/TzuLingTS"
+              target="_blank"
+              class="social flex-row-align-center"
+            >
+              <img
+                src="img/social-media-icon/github.png"
+                alt="GitHub Icon"
+                class="icon"
+              />
+              <span>Find me on <strong>Github</strong>!</span>
+            </a>
           </div>
         </div>
-        <!--column to hold the right container-->
-        <div class="column col-md-7">
-          <!--My Story-->
-          <div class="my-story">
-            <h1 class="text-align-center">Tzu-Ling Tseng</h1>
-            <h3 class="text-align-center"><span class="semi-hightlight">UX/UI DESIGNER</span></h3>
-            <div class="margin-30">
-              <p>Hello, I’m Tzu-Ling Tseng. A UX designer with a background in electrical and electronic engineering office administration. </p>
-              <p>As a personal assistant, I understand the importance of <span class="highlight">managing the overall workflow.</span> I make sure the procedure is executed well based on the defined decision we made upon the meeting, and <span class="highlight">keep it flexible for any further changes according to the feedback</span> from the user and colleagues during the process. </p>
-              <p>I also take accountability to <span class="highlight">balance the needs across multiple teams(contractors, clients, users, suppliers, and engineers)</span>, collecting data and conditions from the user’s side and pass it back to the office.</p>
-              <p>The same principles apply when it comes to designing a digital product. To ensure we have a better product that people enjoy using, <span class="highlight">I focus on the user’s need, staying flexible on the planning and implementing points of view, and continuously iterating through the designing process.</span></p>
-              <p>Additionally, volunteering at homeless shelters in the UK makes me <span class="highlight">a better communicator in a multicultural environment</span>. As part of my daily role, I take the responsibility to hand over and pass the works and messages to the staff and other volunteers. It’s crucial to understand the different communication styles across cultures, different ways of thinking, and how to provide feedback effectively.</p>
-              <p><span class="highlight">My goal is to turn my passion into my profession by working as a UX designer</span>, using my skills and knowledge to offer companies different perspectives across the team.</p>
-            </div>
-            <div class="about-section-divider"><!--Section Divide-->
-              <div class="dot1"></div>
-              <div class="dot2"></div>
-              <div class="dot3"></div>
-            </div><!--CLose Section Divide-->
-          </div>
-
-          <!--Skills and Tools-->
-          <div class="section tools">
-            <div class="column">
-              <h2 class="text-align-center">Tools</h2>
-            </div>
-            <!--Row-->
-            <div class="row">
-              <!--Column for Design Tools-->
-              <div class="column col-md-6" id="design-tool">
-                <h3 class="decoration design-tools">Design Tools</h3>
-                <ul>
-                  <li>Sketch</li>
-                  <li>Illustrotor</li>
-                  <li>Photoshop</li>
-                  <li>After Effects</li>
-                </ul>
-              </div>
-              <!--Column for Developing Tool-->
-              <div class="column col-md-6" id="developing-skill">
-                <h3 class="decoration developing-tools">Developing Tools</h3>
-                <ul>
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>JavaScript</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--column right-->
+        <p id="copyright">
+          <span>Designed & Developed by Tzu-Ling Tseng</span> © 2020-2021 All
+          Rights Reserved
+        </p>
       </div>
-      <!--row-->
-    </div>
-    <!--Contianer-->
-  </main>
-  <!--This is for my Contact Information.-->
-  <footer id="contact">
-    <!-- Inner Cotainer-->
-    <div class="container">
-      <h2 class="text-align-center">Contact</h2>
-      <div class="row flex-row-align-center">
-        <div class="column col-md-6 col-ld-7">
-          <h3>Let's Get In Touch!</h3>
-          <p>
-            I'm ready for the new challenge! <br>If you like my works and want to have some chat with me. Here's how you can reach me:
-          </p>
-        </div>
-        <!--Column for email-->
-        <div class="column social-flex col-md-6 col-ld-5">
-          <div>
-          <a href="mailto:tzuling.ts@gmail.com" class="social flex-row-align-center margin-bottom">
-            <img src="img/social-media-icon/gmail.png" alt="Email Icon" class="icon">
-            <span><strong>Email</strong> me!</span>
-          </a>
-          <p class="email-copy tooltip">
-            <span id="emailCopy" onclick="copyElementText()">TzuLingTS@gmail.com
-            <img src="img/social-media-icon/clipboard.svg" alt="Copy Email Icon"></span>
-            <span class="tooltiptext" id="myTooltip">Copy to Clipboard</span>
-          </p>
-        </div>
-          <a href="https://www.linkedin.com/in/tzulingtseng" target="_blank" class="social flex-row-align-center">
-            <img src="img/social-media-icon/linkedin.png" alt="LinkedIn Icon" class="icon">
-            <span>Find me on <strong>LinkedIn</strong>!</span>
-          </a>
-          <a href="https://github.com/TzuLingTS" target="_blank" class="social flex-row-align-center">
-            <img src="img/social-media-icon/github.png" alt="GitHub Icon" class="icon">
-            <span>Find me on <strong>Github</strong>!</span>
-          </a>
-        </div>
-      </div>
-      <p id="copyright">Copyright Tzu-Ling Tseng 2020</p>
-    </div>
-  </footer>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script src="js/script.js"></script>
-</body>
-
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
